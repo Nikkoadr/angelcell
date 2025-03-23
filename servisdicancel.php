@@ -1,0 +1,25 @@
+<?php
+ goto qPPI0; wWQIi: $query = mysqli_query($conn, $sql); goto Nj7yi; HKTpD: include "\x68\145\x61\144\145\x72\56\160\150\160"; goto Mby3A; BTtBc: ob_end_flush(); goto V0lzn; UXvg3: ?>
+<meta content="width=device-width,initial-scale=1"name="viewport"><meta charset="UTF-8"><link href="image\favicon.ico"rel="icon"><html><head><title>Servis Dicancel</title><link href="css/main.css"rel="stylesheet"></head><header><div class="container"><?php  goto JTChN; gYHdp: include "\161\x75\145\x72\x79\163\x65\162\x76\151\163\x2e\160\150\x70"; goto f6noU; f6noU: include "\142\x75\164\x74\x6f\x6e\x73\x65\162\166\x69\163\x2e\160\150\x70"; goto rcFX_; mhiwp: if (!isset($_SESSION["\165\163\x65\162"])) { header("\x4c\x6f\143\141\164\x69\157\156\x3a\x20\154\x6f\147\151\156\56\x70\150\160"); die; } goto UXvg3; rcFX_: ?>
+<div class="diterimaselesai"><h1><span class="highlight">Servis Dicancel </span>Belum Diambil</h1></div><link href="https://cdn.datatables.net/1.13.1/css/jquery.dataTables.min.css"rel="stylesheet"type="text/css"><script type="text/javascript"src="https://code.jquery.com/jquery-3.5.1.js"></script><script type="text/javascript"src="https://cdn.datatables.net/1.13.1/js/jquery.dataTables.min.js"></script><div class="limiter"><div class="container-table100"><div class="wrap-table100"><br><div class="m-b-110 table100 ver3"><table border="0"class="display"data-vertable="ver3"id="example"style="width:100%"><thead class="sticky-stuff"><tr><th style="text-align:center">Tanggal</th><th style="text-align:center">Nama</th><th style="text-align:center">Tipe</th><th style="text-align:center">Kerusakan</th><th style="text-align:center">Ambil</th></tr></thead><tbody><?php  goto SYsPt; rOCFQ: $conn = null; goto BTtBc; Mby3A: ?>
+</ul></nav></div></header><?php  goto gYHdp; SYsPt: $sql = "\x53\105\x4c\105\103\x54\x20\52\40\106\x52\x4f\x4d\40\x6b\145\x72\141\x6e\x6a\x61\156\147\142\145\x6c\141\x6e\152\141\x20\153\x62\x20\111\116\116\x45\122\40\x4a\x4f\111\116\40\x64\141\164\141\x73\x65\162\166\x69\x73\40\144\x73\40\117\116\x20\153\x62\x2e\x69\x64\144\x61\164\141\163\145\x72\x76\151\x73\40\75\40\x64\x73\x2e\151\144\144\x61\164\x61\x73\145\162\x76\x69\x73\40\x57\110\105\x52\105\x20\153\142\x2e\x69\x64\x6a\x65\x6e\x69\163\x70\145\156\152\165\141\x6c\141\x6e\40\75\40\47\x33\47\x20\101\x4e\x44\x20\144\x73\56\163\x74\141\x74\165\x73\x20\x3d\40\x27\x73\145\x72\166\x69\163\x20\x64\151\x63\x61\x6e\143\145\154\x27"; goto wWQIi; qTto0: ?>
+<nav><ul><?php  goto HKTpD; JTChN: include "\x6c\x6f\147\x6f\x2e\x70\150\x70"; goto qTto0; qPPI0: session_start(); goto L0zeF; L0zeF: require_once "\144\x62\141\156\147\x65\x6c\143\157\x6e\x6e\145\x63\x74\56\x70\x68\x70"; goto mhiwp; mrFlt: ?>
+</tbody><script type="text/javascript">$(document).ready(function(){$("#example").DataTable()})</script></table></div></div></div></div></html><?php  goto rOCFQ; Nj7yi: while ($result = mysqli_fetch_array($query, MYSQLI_ASSOC)) { $nonota = $result["\156\x6f\x6e\157\164\141"]; $_SESSION["\156\x6f\164\141\164\x65\162\x70\x69\154\x69\x68"] = $result["\156\x6f\x6e\157\164\141"]; $iddataservis = $result["\151\x64\144\141\164\141\163\x65\x72\166\151\163"]; $tanggalmasuk = $result["\x74\141\156\147\147\141\x6c\155\x61\163\x75\x6b"]; $nama = $result["\156\x61\x6d\141"]; $nohp = $result["\156\157\x68\x70"]; $alamat = $result["\141\154\x61\155\141\164"]; $merk = $result["\155\145\162\153"]; $tipe = $result["\164\x69\160\145"]; $kerusakan = $result["\153\145\x72\165\163\141\x6b\x61\x6e"]; $kondisi = $result["\153\157\x6e\144\x69\x73\151"]; $pin = $result["\x70\151\156"]; $sandi = $result["\x73\141\156\144\x69"]; $pola = $result["\160\x6f\x6c\x61"]; ?>
+<tr><td class="column100 column2"data-column="column2"><?php  echo date("\144\40\x4d\x20\131", strtotime($tanggalmasuk)); ?>
+</td><td class="column100 column2"data-column="column2"><?php  echo $nama; ?>
+</td><td class="column100 column2"data-column="column2"><?php  echo $tipe; ?>
+</td><td class="column100 column2"data-column="column2"><?php  echo $kerusakan; ?>
+</td><td class="column100 column8"class="edit"data-column="column8"><form action="notapenjualan.php"method="post"><input name="nonota"type="hidden"value="<?php  echo $nonota; ?>
+"> <input name="iddataservis"type="hidden"value="<?php  echo $iddataservis; ?>
+"> <input name="tanggalmasuk"type="hidden"value="<?php  echo $tanggalmasuk; ?>
+"> <input name="nama"type="hidden"value="<?php  echo $nama; ?>
+"> <input name="nohp"type="hidden"value="<?php  echo $nohp; ?>
+"> <input name="alamat"type="hidden"value="<?php  echo $alamat; ?>
+"> <input name="merk"type="hidden"value="<?php  echo $merk; ?>
+"> <input name="tipe"type="hidden"value="<?php  echo $tipe; ?>
+"> <input name="kerusakan"type="hidden"value="<?php  echo $kerusakan; ?>
+"> <input name="kondisi"type="hidden"value="<?php  echo $kondisi; ?>
+"> <input name="pin"type="hidden"value="<?php  echo $pin; ?>
+"> <input name="sandi"type="hidden"value="<?php  echo $sandi; ?>
+"> <input name="pola"type="hidden"value="<?php  echo $pola; ?>
+"> <input name="submit"type="image"class="gambartabel"src="image/check.png"></form></td></tr><?php  } goto mrFlt; V0lzn: ?>

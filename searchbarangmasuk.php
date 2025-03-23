@@ -1,0 +1,29 @@
+<?php
+ goto qE0LV; ihp2Y: ob_end_flush(); goto ESvW1; UqAEx: include "\150\x65\141\x64\x65\162\56\x70\150\160"; goto YuSQ4; YqHaD: ?>
+</tbody><script type="text/javascript">$(document).ready(function(){$("#example").DataTable()})</script></table></html><?php  goto bkUsm; sZU8B: if ($_SESSION["\x75\x73\145\x72"] != "\141\x64\155\151\x6e") { header("\x4c\x6f\x63\x61\x74\151\157\156\72\x20\163\145\141\x72\x63\x68\x62\x61\x72\x61\156\x67\x2e\160\150\160"); die; } goto opKEA; M6c4o: $sql = "\x53\x45\114\105\x43\124\40\52\40\x46\x52\117\x4d\x20\x62\141\162\141\156\147\x6d\x61\x73\165\x6b\x20\x62\x6d\40\111\x4e\116\105\x52\40\112\117\111\x4e\40\x62\x61\x72\141\156\x67\40\142\40\x4f\116\40\142\56\151\144\142\x61\x72\141\156\147\75\x62\155\x2e\151\x64\142\141\162\x61\156\x67\40\111\x4e\x4e\105\122\x20\112\117\x49\x4e\40\163\165\x70\160\x6c\x69\x65\x72\40\x73\40\x4f\x4e\x20\142\155\56\x69\x64\163\x75\160\160\x6c\151\x65\162\x20\x3d\x20\x73\56\151\x64\163\x75\160\x70\154\x69\145\162\x20\x4f\122\x44\105\x52\40\102\131\40\142\x6d\x2e\x69\x64\142\x61\162\141\x6e\x67\155\x61\x73\165\153\40\101\x53\103"; goto kYd88; E90cr: include "\154\x6f\147\157\x2e\x70\150\160"; goto NnqSZ; k42yB: require_once "\x64\142\x61\x6e\x67\x65\x6c\x63\157\x6e\x6e\145\143\164\x2e\160\x68\x70"; goto sZU8B; NnqSZ: ?>
+<nav><ul><?php  goto UqAEx; opKEA: ?>
+<meta content="width=device-width,initial-scale=1"name="viewport"><meta charset="UTF-8"><link href="image\favicon.ico"rel="icon"><html><head><title>Barang Masuk</title><link href="css/main.css"rel="stylesheet"></head><header><div class="container"><?php  goto E90cr; nCcBa: while ($result = mysqli_fetch_array($query, MYSQLI_ASSOC)) { $idbarangmasuk = $result["\x69\144\x62\x61\162\x61\x6e\147\155\141\x73\x75\x6b"]; $idbarang = $result["\x69\144\x62\141\162\x61\x6e\x67"]; $idsupplier = $result["\x69\144\x73\x75\160\160\154\151\x65\x72"]; $namasupplier = $result["\x6e\x61\155\x61\x73\165\160\160\x6c\151\145\162"]; $namabarang = $result["\x6e\x61\x6d\141\142\x61\162\141\156\147"]; $hargaecer = $result["\x68\x61\x72\147\x61\145\x63\x65\x72"]; $hargagrosir = $result["\150\141\162\147\141\147\x72\157\163\151\162"]; $stok = $result["\x73\x74\x6f\x6b"]; $qty = $result["\x71\164\171\142\x65\154\x69"]; $hargamodal = $result["\150\x61\x72\x67\141\x6d\157\x64\x61\154"]; $tags = $result["\164\x61\147\x73"]; $tanggalbeli = $result["\164\141\156\147\147\141\x6c\142\x65\x6c\151"]; $shargaecer = number_format($hargaecer, 0, '', "\x2e"); $shargagrosir = number_format($hargagrosir, 0, '', "\x2e"); $sstok = number_format($stok, 0, '', "\x2e"); $sqty = number_format($qty, 0, '', "\56"); ?>
+<tr><td class="column100 column2"data-column="column2"><?php  echo $namabarang; ?>
+</td><td class="column100 column2"data-column="column2"><?php  echo $shargaecer; ?>
+</td><td class="column100 column2"data-column="column2"><?php  echo $shargagrosir; ?>
+</td><td class="column100 column2"data-column="column2"><?php  echo $sstok; ?>
+</td><td class="column100 column2"data-column="column2"><?php  echo $sqty; ?>
+</td><td class="column100 column2"data-column="column2"style="display:none"><?php  echo $tags; ?>
+</td><td class="column100 column2"data-column="column2"style="display:none"><?php  echo $kodebarang; ?>
+</td><td class="column100 column8"class="edit"data-column="column8"><form action="editbarangmasuk.php"method="post"><input name="destination"type="hidden"value="<?php  echo $_SERVER["\122\x45\x51\x55\x45\123\x54\x5f\125\122\111"]; ?>
+"> <input name="idbarang2"type="hidden"value="<?php  echo $idbarang; ?>
+"> <input name="idbarangmasuk2"type="hidden"value="<?php  echo $idbarangmasuk; ?>
+"> <input name="idsupplier2"type="hidden"value="<?php  echo $idsupplier; ?>
+"> <input name="kodebarang2"type="hidden"value="<?php  echo $kodebarang; ?>
+"> <input name="namabarang2"type="hidden"value="<?php  echo $namabarang; ?>
+"> <input name="namasupplier2"type="hidden"value="<?php  echo $namasupplier; ?>
+"> <input name="hargaecer2"type="hidden"value="<?php  echo $hargaecer; ?>
+"> <input name="hargagrosir2"type="hidden"value="<?php  echo $hargagrosir; ?>
+"> <input name="hargamodal2"type="hidden"value="<?php  echo $hargamodal; ?>
+"> <input name="tags2"type="hidden"value="<?php  echo $tags; ?>
+"> <input name="stok2"type="hidden"value="<?php  echo $stok; ?>
+"> <input name="qty2"type="hidden"value="<?php  echo $qty; ?>
+"> <input name="namasupplier2"type="hidden"value="<?php  echo $namasupplier; ?>
+"> <input name="tanggalbeli2"type="hidden"value="<?php  echo $tanggalbeli; ?>
+"> <input name="submit"type="image"class="gambartabel"src="image/check.png"></form></td></tr><?php  } goto YqHaD; YuSQ4: ?>
+</ul></nav></div></header><link href="https://cdn.datatables.net/1.13.1/css/jquery.dataTables.min.css"rel="stylesheet"type="text/css"><script type="text/javascript"src="https://code.jquery.com/jquery-3.5.1.js"></script><script type="text/javascript"src="https://cdn.datatables.net/1.13.1/js/jquery.dataTables.min.js"></script><div class="limiter"><div class="container-table100"><div class="wrap-table100"><br><div class="m-b-110 table100 ver3"><table border="0"class="display"data-vertable="ver3"id="example"style="width:100%"><thead class="sticky-stuff"><tr><th style="text-align:center">Nama</th><th style="text-align:center">Ecer</th><th style="text-align:center">Grosir</th><th style="text-align:center">Stok</th><th style="text-align:center">Tambah Qty</th><th style="text-align:center">ACC</th><th style="display:none">Kode</th><th style="display:none">Tags</th></tr></thead><tbody><?php  goto M6c4o; qE0LV: session_start(); goto k42yB; bkUsm: $conn = null; goto ihp2Y; kYd88: $query = mysqli_query($conn, $sql); goto nCcBa; ESvW1: ?>

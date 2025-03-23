@@ -1,0 +1,14 @@
+<?php
+ goto yIjIF; r2wRr: include "\x68\145\x61\x64\x65\x72\x2e\x70\150\x70"; goto JT88A; ZAKF_: ?>
+"></div><div><label>Privilege</label><br><input name="privilege"value="<?php  goto cEFD8; ex78e: ?>
+"readonly></div><div><label>Nama</label><br><input name="namauser"value="<?php  goto J1Thf; LJ_Q5: ?>
+<link href="image\favicon.ico"rel="icon"><meta content="width=device-width,initial-scale=1"name="viewport"><meta charset="UTF-8"><html><head><title>Edit User</title><link href="css/main.css"rel="stylesheet"></head><header><div class="container"><?php  goto oh6gu; lrDlw: ?>
+"></div><div><label>No Handphone</label><br><input name="nohp"value="<?php  goto jB3D2; BxQVM: ob_end_flush(); goto nLbCS; AojBN: ?>
+"type="hidden"><br><button class="button_1"type="submit">Simpan</button></form></div></aside></section></div></body></html><?php  goto Yq3G2; kAWAe: echo $_POST["\164\x61\156\x67\147\141\x6c"]; goto KP115; yIjIF: session_start(); goto pp3yT; jB3D2: echo $_POST["\x6e\x6f\150\x70"]; goto Qk5SR; cEFD8: echo $_POST["\160\x72\x69\166\151\154\145\x67\x65"]; goto fRm3E; t0sSC: ?>
+<nav><ul><?php  goto r2wRr; JT88A: ?>
+</ul></nav></div></header><body><div class="buttonhapusnota"><form action="proseshapususer.php"method="post"><input name="iduser"value="<?php  goto ketJ4; pp3yT: require_once "\144\x62\141\156\147\145\x6c\x63\157\156\156\145\x63\x74\56\160\150\160"; goto zQe2b; J1Thf: echo $_POST["\x6e\141\x6d\141\x75\x73\145\x72"]; goto mG0QI; ketJ4: echo $_POST["\x69\x64\x75\163\x65\x72"]; goto xyVZx; TNiwW: echo $_POST["\144\x65\x73\x74\x69\x6e\141\164\x69\157\x6e"]; goto AojBN; KP115: ?>
+"type="date"></div><input name="destination"value="<?php  goto TNiwW; xyVZx: ?>
+"readonly type="hidden"> <button class="button_hapus"type="submit">HAPUS USER</button></form></div><div align="center"id="edit"><section id="boxes"><aside id="sidebar"><div class="dark"style="font-size:25px"><form action="prosesedituser.php"method="post"class="quote"><div><label>ID User</label><br><input name="iduser"value="<?php  goto Cj8fb; Yq3G2: $conn = null; goto BxQVM; J3dAj: echo $_POST["\x75\163\x65\x72\156\x61\x6d\145"]; goto ZAKF_; zQe2b: if ($_SESSION["\x75\163\x65\162"] != "\x61\144\155\151\156") { header("\114\157\x63\141\x74\x69\157\156\72\40\x73\145\x61\162\143\150\x62\141\162\x61\x6e\147\56\160\150\160"); die; } goto LJ_Q5; WCgYa: echo $_POST["\x61\154\x61\x6d\141\164"]; goto lrDlw; Cj8fb: echo $_POST["\151\x64\165\163\x65\x72"]; goto ex78e; fRm3E: ?>
+"readonly></div><div><label>Tanggal</label><br><input name="tanggal"value="<?php  goto kAWAe; mG0QI: ?>
+"></div><div><label>Alamat</label><br><input name="alamat"value="<?php  goto WCgYa; oh6gu: include "\x6c\157\x67\157\x2e\x70\150\160"; goto t0sSC; Qk5SR: ?>
+"></div><div><label>Password</label><br><input name="username"value="<?php  goto J3dAj; nLbCS: ?>

@@ -1,0 +1,18 @@
+<?php
+ goto RwiaX; kSN0Y: ?>
+<div><label>Qty Jual</label><br><input name="qtyjual"value="<?php  goto ejRzq; xjrgL: ?>
+</ul></nav></div></header><body><div align="center"><section id="boxes"><aside id="sidebar"><div class="dark"style="font-size:25px"><form action="proseshapusnotapenjualanbarang.php"class="tulisanformbesar"method="post"><input name="idkeranjangrinci"value="<?php  goto cULgs; ygbIT: include_once "\150\x65\x61\x64\145\x72\x2e\x70\x68\x70"; goto xjrgL; uIODc: echo $_POST["\x64\x65\163\x74\151\x6e\141\164\151\157\156"]; goto zidOJ; RwiaX: session_start(); goto nzQoU; s_6Kt: echo $_POST["\x6e\157\x74\141\164\x65\162\160\151\154\x69\150"]; goto R1IJ_; vbipM: ?>
+"readonly></div><div><label>Nama Barang</label><br><input name="namabarang"value="<?php  goto gwLQK; WPuBZ: ?>
+"readonly type="hidden"> <input name="destination"value="<?php  goto PUTPf; fMSNT: echo $_POST["\x69\144\x62\x61\x72\141\x6e\147"]; goto vbipM; kdFpy: ?>
+"type="number"required></div><input name="idkeranjangrinci"value="<?php  goto yedQn; LbTVn: if (!isset($_SESSION["\165\x73\x65\x72"])) { header("\114\x6f\x63\141\164\x69\157\x6e\x3a\40\x73\x65\141\162\143\150\x62\x61\162\x61\x6e\147\x2e\x70\150\x70"); die; } goto eqMBY; xAkRr: ?>
+"readonly type="hidden"> <input name="notaterpilih"value="<?php  goto s_6Kt; eqMBY: ?>
+<link href="image\favicon.ico"rel="icon"><meta content="width=device-width,initial-scale=1"name="viewport"><meta charset="UTF-8"><html><head><title>Edit Barang</title><link href="css/main.css"rel="stylesheet"></head><header><div class="container"><?php  goto TWOEM; ejRzq: echo $_POST["\161\x74\x79\x6a\165\x61\154"]; goto kdFpy; zidOJ: ?>
+"readonly type="hidden"><br><button class="button_1"type="submit">Simpan</button></form></div></aside></section></div></body></html><?php  goto MKJ0w; gwLQK: echo $_POST["\156\141\x6d\141\x62\141\162\141\156\x67"]; goto jOaQ1; TWOEM: include "\154\157\147\157\56\x70\x68\x70"; goto Zh8pC; cULgs: echo $_POST["\x69\144\153\145\x72\x61\156\x6a\141\x6e\x67\x72\x69\156\x63\x69"]; goto UgEAv; I1DPi: echo $_POST["\x68\x61\162\147\x61\152\x75\x61\154"]; goto apM5C; PUTPf: echo $_POST["\144\x65\x73\164\151\x6e\x61\164\151\x6f\156"]; goto tvAh_; nzQoU: require_once "\x64\142\x61\x6e\147\145\154\x63\x6f\x6e\x6e\x65\143\x74\56\160\150\x70"; goto LbTVn; mc0dE: ob_end_flush(); goto VAxQw; MKJ0w: $conn = null; goto mc0dE; Zh8pC: ?>
+<nav><ul><?php  goto ygbIT; jP_a_: echo $_POST["\156\157\x74\x61\x74\145\x72\x70\x69\154\151\150"]; goto WPuBZ; apM5C: ?>
+"readonly type="number"></div><?php  goto ysEex; R1IJ_: ?>
+"readonly type="hidden"> <input name="destination"value="<?php  goto uIODc; tvAh_: ?>
+"readonly type="hidden"><br><button class="button_hapus"type="submit">HAPUS</button></form><form action="proseseditnotapenjualanbarang.php"class="tulisanformbesar"method="post"><div><label>ID Barang</label><br><input name="idbarang"value="<?php  goto fMSNT; ysEex: if ($_POST["\x69\144\142\x61\162\x61\156\147"] == 0) { ?>
+<div><label>Harga Modal</label><br><input name="hargamodal"value="<?php  echo $_POST["\x68\x61\x72\147\x61\x6d\x6f\144\141\x6c"]; ?>
+"readonly type="number"></div><?php  } goto kSN0Y; UgEAv: ?>
+"readonly type="hidden"> <input name="notaterpilih"value="<?php  goto jP_a_; yedQn: echo $_POST["\x69\144\153\145\x72\141\x6e\x6a\x61\156\x67\x72\x69\156\x63\x69"]; goto xAkRr; jOaQ1: ?>
+"readonly></div><div><label>Harga Jual</label><br><input name="hargajual"value="<?php  goto I1DPi; VAxQw: ?>

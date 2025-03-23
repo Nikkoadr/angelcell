@@ -1,0 +1,18 @@
+<?php
+ goto Dqbv0; V38HX: echo $_POST["\151\144\x62\141\162\x61\x6e\147\155\141\163\x75\x6b\x32"]; goto gAhGw; NLhd6: ?>
+"type="hidden"> <input name="idbarangmasuk"value="<?php  goto GFmKW; LanM_: ?>
+"type="number"></div><div><label>Harga Grosir</label><br><input name="hargagrosir"value="<?php  goto c7Frg; YQu2b: ?>
+"type="number"readonly></div><div><label>Harga Modal</label><br><input name="hargamodal"value="<?php  goto qObwP; RYUQD: ?>
+</ul></nav></div></header><body><div class="buttonhapusnota"><form action="proseshapusbarangmasuk.php"method="post"><input name="idbarangmasuk"value="<?php  goto V38HX; aXYa7: ob_end_flush(); goto evRwW; XCM9W: echo $_POST["\161\164\171\62"]; goto jfdEA; a62R_: echo $_POST["\x69\x64\x62\x61\162\141\156\147\x32"]; goto NLhd6; TJdgv: if ($_SESSION["\165\163\x65\x72"] != "\x61\144\x6d\151\x6e") { header("\x4c\x6f\143\x61\x74\151\x6f\x6e\x3a\x20\154\x6f\x67\x69\x6e\56\x70\150\160"); die; } goto EN0cZ; gkCK5: ?>
+"type="number"></div><div><label>Harga Eceran</label><br><input name="hargaecer"value="<?php  goto GPSaH; GPSaH: echo $_POST["\150\x61\x72\x67\x61\x65\143\x65\162\x32"]; goto AnD_Q; RFwcr: require_once "\144\142\x61\x6e\x67\145\x6c\x63\x6f\x6e\x6e\x65\x63\164\x2e\x70\x68\160"; goto TJdgv; Dqbv0: session_start(); goto RFwcr; c7Frg: echo $_POST["\x68\141\x72\x67\141\x67\162\157\x73\151\162\62"]; goto gkCK5; hwLr7: echo $_POST["\x69\x64\x73\x75\160\x70\x6c\x69\145\162\x32"]; goto y1XXW; qObwP: echo $_POST["\x68\x61\x72\147\141\155\x6f\144\x61\154\x32"]; goto LanM_; nbCPY: ?>
+"type="hidden"> <input name="destination"value="<?php  goto MlYY9; EN0cZ: ?>
+<link href="image\favicon.ico"rel="icon"><meta content="width=device-width,initial-scale=1"name="viewport"><meta charset="UTF-8"><html><head><title>Barang Masuk</title><link href="css/main.css"rel="stylesheet"></head><header><div class="container"><?php  goto OIxzp; gAhGw: ?>
+"type="hidden"readonly> <button class="button_hapus"type="submit">HAPUS BARANG</button></form></div><div align="center"id="edit"><section id="boxes"><aside id="sidebar"><div class="dark"style="font-size:25px"><form action="prosestambahstokbarang.php"method="post"class="quote"><div><label>Tanggal Beli</label><br><input name="tanggalbeli"value="<?php  goto vkS2y; MlYY9: echo $_POST["\144\x65\163\x74\x69\x6e\x61\x74\x69\x6f\x6e"]; goto kfIb0; kfIb0: ?>
+"type="hidden"><br><button class="button_1"type="submit">Simpan</button></form></div></aside></section></div></body></html><?php  goto VLINs; AnD_Q: ?>
+"type="number"></div><div><label>Qty Tambah</label><br><input name="qty"value="<?php  goto XCM9W; GFmKW: echo $_POST["\x69\x64\142\141\162\x61\156\x67\x6d\141\x73\165\x6b\62"]; goto nbCPY; teBOD: ?>
+"readonly></div><div><label>Stok Barang</label><br><input name="stok"value="<?php  goto la7jX; la7jX: echo $_POST["\x73\164\157\x6b\62"]; goto YQu2b; vkS2y: echo $_POST["\x74\141\x6e\147\147\x61\154\x62\145\154\x69\62"]; goto GsHIw; VLINs: $conn = null; goto aXYa7; jfdEA: ?>
+"type="number"></div><input name="idsupplier"value="<?php  goto hwLr7; M9yz4: ?>
+"readonly></div><div><label>Nama Barang</label><br><input name="namabarang"value="<?php  goto URjrA; y1XXW: ?>
+"type="hidden"> <input name="idbarang"value="<?php  goto a62R_; wmptA: include "\150\145\x61\144\145\x72\56\160\150\x70"; goto RYUQD; S50Og: ?>
+<nav><ul><?php  goto wmptA; URjrA: echo $_POST["\x6e\141\x6d\x61\x62\141\162\x61\156\x67\x32"]; goto teBOD; GsHIw: ?>
+"readonly></div><div><label>Nama Supplier</label><br><input name="namasupplier"value="<?php  goto RabhG; OIxzp: include "\154\x6f\147\x6f\x2e\160\x68\160"; goto S50Og; RabhG: echo $_POST["\x6e\141\x6d\141\x73\165\160\160\154\x69\145\162\x32"]; goto M9yz4; evRwW: ?>

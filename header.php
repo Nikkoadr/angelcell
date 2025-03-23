@@ -1,0 +1,10 @@
+<?php
+ goto b1UkA; v_LnM: if ($_SESSION["\165\163\145\162"] == "\x61\144\155\151\156") { ?>
+<div class="dropdown"><button class="dropbtn">Laporan</button><div class="dropdown-content"><a href="searchpenjualanharian.php">Penjualan Harian</a> <a href="searchpendapatan.php">Pendapatan</a> <a href="searchpembelian.php">Pembelian</a> <a href="searchmodal.php">Modal</a> <a href="searchabsen.php">Absen</a> <a href="searchgajikaryawan.php">Gaji</a></div></div><?php  } goto uLxaI; NlO_E: if ($_SESSION["\165\x73\145\x72"] == "\141\x64\x6d\x69\x6e") { ?>
+<a href="tambahbarang.php">Tambah Barang</a> <a href="searchbarangmasuk.php">Barang Masuk</a><?php  } goto fe6PY; fe6PY: if ($_SESSION["\x75\x73\145\162"] != "\x61\144\x6d\x69\x6e") { ?>
+<a href="tambahbarangkaryawan.php">Tambah Barang</a><?php  } goto Z_BAe; Z_BAe: ?>
+<a href="searchbarang.php">Cari Barang</a></div></div><div class="dropdown"><button class="dropbtn">Member</button><div class="dropdown-content"><a href="tambahmember.php">Tambah Member</a> <a href="searchmember.php">Data Member</a></div></div><div class="dropdown"><button class="dropbtn">Penjualan</button><div class="dropdown-content"><a href="penjualanbaru.php">Nota Baru</a> <a href="pilihnota.php">Pilih Nota</a> <a href="searcharsipnota.php">Arsip Nota</a></div></div><a href="servisditerima.php">Servis</a><?php  goto V7i0_; uLxaI: if ($_SESSION["\165\163\x65\162"] == "\x61\144\155\x69\x6e") { ?>
+<div class="dropdown"><button class="dropbtn">User</button><div class="dropdown-content"><a href="tambahuser.php">Tambah User</a> <a href="searchuser.php">Data User</a></div></div><?php  } goto jAR28; b1UkA: ?>
+<div class="navbar"><a href="dashboard.php">Dashboard</a><div class="dropdown"><button class="dropbtn">Barang</button><div class="dropdown-content"><?php  goto NlO_E; V7i0_: if ($_SESSION["\x75\163\x65\x72"] == "\x61\144\x6d\x69\156") { ?>
+<div class="dropdown"><button class="dropbtn">Supplier</button><div class="dropdown-content"><a href="searchsupplier.php">Data Supplier</a> <a href="tambahsupplier.php">Tambah Baru</a></div></div><?php  } goto v_LnM; jAR28: ?>
+<a href="logout.php?logout">Keluar</a></div>

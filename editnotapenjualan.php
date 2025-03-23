@@ -1,0 +1,15 @@
+<?php
+ goto u3vU5; D0YEW: ob_end_flush(); goto gsjtb; XiUAn: ?>
+</ul></nav></div></header><body><div align="center"><section id="boxes"><aside id="sidebar"><div class="dark"style="font-size:25px"><form action="proseseditnotapenjualan.php"class="quote"method="post"><div><label>ID</label><br><input name="iddataservis"value="<?php  goto d6Iyo; S5Kf7: echo $_POST["\153\x6f\x6e\x64\x69\x73\x69"]; goto lKsYC; onNzE: echo $_POST["\156\x6f\150\x70"]; goto Mzh9z; jPrtm: ?>
+"required></div><div><label>Kondisi Handphone</label><br><input name="kondisi"value="<?php  goto S5Kf7; dBMXb: if (!isset($_SESSION["\165\x73\x65\x72"])) { header("\x4c\157\143\141\164\151\157\156\x3a\x20\154\x6f\147\151\x6e\56\x70\x68\160"); die; } goto rS9lY; TgcgT: ?>
+"required></div><div><label>Nama Customer</label><br><input name="nama"value="<?php  goto LgcJp; pwhAM: echo $_POST["\x70\x69\156"]; goto TrtWz; lKsYC: ?>
+"required></div><div><label>PIN</label><br><input name="pin"value="<?php  goto pwhAM; d6Iyo: echo $_POST["\x69\x64\x64\x61\x74\141\x73\x65\x72\x76\x69\x73"]; goto TgcgT; aYJP2: ?>
+"required></div><div><label>No Telepon</label><br><input name="nohp"value="<?php  goto onNzE; SqOB0: $conn = null; goto D0YEW; ZhxLv: require_once "\x64\142\141\156\x67\145\x6c\143\x6f\156\x6e\145\143\164\x2e\x70\150\160"; goto dBMXb; M9p_u: echo $_POST["\x74\151\160\145"]; goto hyWJX; sfJ_V: ?>
+"required></div><div><label>Tipe / Model</label><br><input name="tipe"value="<?php  goto M9p_u; jnPxc: include "\150\x65\x61\x64\x65\162\56\160\150\160"; goto XiUAn; u3vU5: session_start(); goto ZhxLv; TrtWz: ?>
+"></div><div><label>Sandi</label><br><input name="sandi"value="<?php  goto CCi8a; ua8H_: echo $_POST["\155\145\x72\153"]; goto sfJ_V; jFTtD: echo $_POST["\x61\x6c\x61\155\x61\x74"]; goto JwfIl; pbBul: ?>
+"></div><div><label>Pola</label><br><image height="100"src="./image/pattern.png"width="100"></image><br><input name="pola"value="<?php  goto Inmje; CCi8a: echo $_POST["\x73\141\x6e\144\x69"]; goto pbBul; JwfIl: ?>
+"required></div><div><label>Merk Handphone</label><br><input name="merk"value="<?php  goto ua8H_; rS9lY: ?>
+<link href="image\favicon.ico"rel="icon"><meta content="width=device-width,initial-scale=1"name="viewport"><meta charset="UTF-8"><html><head><title>Tambah Barang</title><link href="css/main.css"rel="stylesheet"></head><header><div class="container"><div id="branding"><h1><span class="highlight">Angel </span>Cell</h1></div><nav><ul><?php  goto jnPxc; LgcJp: echo $_POST["\156\x61\155\x61"]; goto aYJP2; Inmje: echo $_POST["\160\157\x6c\x61"]; goto Q45bm; tJNkV: echo $_POST["\153\145\162\x75\x73\141\x6b\x61\156"]; goto jPrtm; Q45bm: ?>
+"></div><br><br><br><button class="button_1"type="submit">Simpan</button></form></div></aside></section></div></body></html><?php  goto SqOB0; hyWJX: ?>
+"required></div><div><label>Kerusakan</label><br><input name="kerusakan"value="<?php  goto tJNkV; Mzh9z: ?>
+"required></div><div><label>Alamat</label><br><input name="alamat"value="<?php  goto jFTtD; gsjtb: ?>

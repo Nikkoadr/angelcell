@@ -1,0 +1,12 @@
+<?php
+ goto qUk1h; ffY32: ?>
+</ul></nav></div></header><body><div class="buttonhapusnota"><form action="proseshapusmember.php"method="post"><input name="idmember"value="<?php  goto ZrqZN; UiQr9: echo $_POST["\156\x61\155\141\x6d\x65\x6d\x62\145\x72"]; goto iObB5; a7ubW: echo $_POST["\151\144\x6d\x65\155\142\145\162"]; goto EGeV0; EGeV0: ?>
+"readonly></div><div><label>Nama Member</label><br><input name="namamember"value="<?php  goto UiQr9; iObB5: ?>
+"></div><div><label>Alamat Member</label><br><input name="alamat"value="<?php  goto RhfrA; yTOhX: ?>
+<nav><ul><?php  goto EPX4B; jypOX: ?>
+"type="hidden"><br><button class="button_1"type="submit">Simpan</button></form></div></aside></section></div></body></html><?php  goto m34j_; ZrqZN: echo $_POST["\151\144\x6d\145\155\142\145\x72"]; goto zdFpt; J0fV9: echo $_POST["\144\145\163\x74\x69\x6e\141\x74\x69\157\156"]; goto jypOX; aV_9m: ?>
+"></div><div><label>Tanggal</label><br><input name="tanggal"value="<?php  goto xY5d1; DVGGX: ?>
+"type="date"></div><input name="destination"value="<?php  goto J0fV9; GzJso: echo $_POST["\x6e\x6f\150\x70"]; goto aV_9m; X4eCj: ?>
+"></div><div><label>No Handphone</label><br><input name="nohp"value="<?php  goto GzJso; vjZhr: if ($_SESSION["\x75\x73\145\162"] != "\141\x64\155\151\x6e") { header("\114\157\x63\141\164\x69\x6f\x6e\x3a\x20\163\145\141\x72\143\x68\x62\141\162\x61\156\x67\x2e\160\150\160"); die; } goto KOSNs; KOSNs: ?>
+<link href="image\favicon.ico"rel="icon"><meta content="width=device-width,initial-scale=1"name="viewport"><meta charset="UTF-8"><html><head><title>Edit Member</title><link href="css/main.css"rel="stylesheet"></head><header><div class="container"><?php  goto aQbiv; m34j_: $conn = null; goto RT1NH; qUk1h: session_start(); goto Ecm4D; RT1NH: ob_end_flush(); goto XLoXT; EPX4B: include "\x68\145\x61\144\145\162\56\160\150\x70"; goto ffY32; RhfrA: echo $_POST["\x61\154\141\x6d\x61\164"]; goto X4eCj; xY5d1: echo $_POST["\x74\x61\156\x67\147\141\x6c"]; goto DVGGX; zdFpt: ?>
+"type="hidden"readonly> <button class="button_hapus"type="submit">HAPUS MEMBER</button></form></div><div align="center"id="edit"><section id="boxes"><aside id="sidebar"><div class="dark"style="font-size:25px"><form action="proseseditmember.php"method="post"class="quote"><div><label>ID Member</label><br><input name="idmember"value="<?php  goto a7ubW; Ecm4D: require_once "\144\x62\141\156\x67\x65\x6c\143\157\x6e\x6e\x65\x63\164\x2e\160\x68\160"; goto vjZhr; aQbiv: include "\x6c\157\147\x6f\56\x70\x68\160"; goto yTOhX; XLoXT: ?>
