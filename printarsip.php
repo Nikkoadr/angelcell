@@ -104,8 +104,8 @@ else{
 	//$connector = new WindowsPrintConnector("smb://FooUser:user@DESKTOP-DBAM230/workgroup/EPSON TM-T88V Archen");
 	//$connector = new WindowsPrintConnector("EPSON TM-T88V Archen");
 
-	$connector = new WindowsPrintConnector("pos58");
-	//$connector = new NetworkPrintConnector("192.168.1.2", 9100);
+	$connector = new WindowsPrintConnector("FK80 Printer(2)");
+	//$connector = new NetworkPrintConnector("192.168.7.177", 9100);
 	$printer = new Printer($connector);
 
 	// barang awal
@@ -129,20 +129,20 @@ else{
 	$printer -> setJustification(Printer::JUSTIFY_CENTER);
 	$printer -> bitImage($logo);
 	$printbaris = $printer -> feed();
-	$printer -> text("Desa Lelea depan Pegadaian");
+	$printer -> text("Jalan Jangga-Terisi Desa jangga");
 	$printer -> feed();
-	$printer -> text("Kecamatan Lelea");
+	$printer -> text("Kecamatan Losarang");
 	$printer -> feed();
-	$printer -> text("WhatsApp :  087781715535");
+	$printer -> text("");
 	$printer -> feed();
 	$printer -> text($tanggal);
 	$printer -> feed();
-	$printer -> text("--------------------------------");
+	$printer -> text("------------------------------------------------");
 	//$printer -> text("——————————————————————————————————————————");
 	$printer -> feed();
 	$printer -> setJustification(0);
 	$printer -> text("Kasir  : ".$namakasir);
-	
+
 	$pjg = strlen($namakasir);
 	$pjgm = strlen($idjenispenjualan);
 
@@ -155,7 +155,8 @@ else{
 	for($i=$ipjg; $i >= $pjg; $i--){
 		$printer -> text(" ");
 	}
-	$printer -> feed();
+
+
 	if($idjenispenjualan == '1'){
 		$printer -> text("Jenis : Eceran");
 		$printer -> feed();
@@ -213,7 +214,7 @@ else{
 		$printer -> feed();
 	}
 	$printer -> setJustification(1);
-	$printer -> text("--------------------------------");
+	$printer -> text("------------------------------------------------");
 	//$printer -> text("——————————————————————————————————————————");
 	$printer -> feed();
 	$qtypcs=0;
@@ -388,7 +389,7 @@ else{
 	$kembali = $tunai - $grandtotal;
 
 	$printer -> setJustification(2);
-	$printer -> text("---------------------------------");
+	$printer -> text("------------------------------");
 	$printer -> feed();
 
 	if($diskon != 0){ //JIKA ADA DISKON

@@ -80,9 +80,9 @@ date_default_timezone_set("Asia/Jakarta");
 	//$connector = new WindowsPrintConnector("smb://FooUser:user@DESKTOP-DBAM230/workgroup/EPSON TM-T88V Archen");
 	//$connector = new WindowsPrintConnector("EPSON TM-T88V Archen");
 
-$connector = new WindowsPrintConnector("FK80 Printer(2)");
+	$connector = new WindowsPrintConnector("FK80 Printer(2)");
 	//$connector = new NetworkPrintConnector("192.168.7.177", 9100);
-$printer = new Printer($connector);
+	$printer = new Printer($connector);
 
 date_default_timezone_set("Asia/Jakarta");
 $tanggal = date("d M Y H:i:s");
@@ -170,25 +170,8 @@ else{
 
 	$printer -> text("Nama  : ".$nama);
 	$printer -> feed();
-
+	
 	$printer -> text("Alamat : ".$alamat);
-
-	$pjg = strlen($alamat);
-	for($i=$ipjg; $i >= $pjg; $i--){
-		$printer -> text(" ");
-	}
-
-	$printer -> text("PIN  : ".$pin);
-	$printer -> feed();
-
-	$printer -> text("Sandi  : ".$sandi);
-
-	$pjg = strlen($sandi);
-	for($i=$ipjg; $i >= $pjg; $i--){
-		$printer -> text(" ");
-	}
-
-	$printer -> text("Pola : ".$pola);
 	$printer -> feed();
 }
 $printer -> setJustification(1);
