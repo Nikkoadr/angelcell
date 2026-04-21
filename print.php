@@ -2,12 +2,13 @@
 session_start();
 require_once 'dbangelconnect.php';
 
-if(!isset($_SESSION['user'])) {
+if (!isset($_SESSION['user'])) {
     header("Location: searchbarang.php");
     exit;
 }
 
 require __DIR__ . '/epson/autoload.php';
+
 use Mike42\Escpos\Printer;
 use Mike42\Escpos\PrintConnectors\WindowsPrintConnector;
 use Mike42\Escpos\EscposImage;
@@ -15,10 +16,12 @@ use Mike42\Escpos\EscposImage;
 // =======================
 // 1. HELPER
 // =======================
-function checkString($string){
+function checkString($string)
+{
     return htmlspecialchars(strip_tags(trim($string)));
 }
-function checkNumber($number){
+function checkNumber($number)
+{
     $val = filter_var($number, FILTER_VALIDATE_INT);
     return $val === false ? 0 : $val;
 }
@@ -38,7 +41,7 @@ $printnota        = checkNumber($_POST['printnota']);
 $grandtotal = $subtotal - $diskon;
 $kembali    = $tunai - $grandtotal;
 
-if($kembali < 0){
+if ($kembali < 0) {
     die("<h2 style='color:red'>Pembayaran kurang!</h2>");
 }
 
@@ -58,7 +61,7 @@ try {
     $qK->execute();
     $resK = $qK->get_result()->fetch_assoc();
 
-    if(!$resK){
+    if (!$resK) {
         throw new Exception("Keranjang tidak ditemukan!");
     }
 
@@ -67,7 +70,8 @@ try {
         (idjenispenjualan, nonota, idmember, iddataservis, tanggalmasuk, tanggalselesai, namakasir, subtotal, diskon, tunai)
         VALUES (?,?,?,?,?,?,?,?,?,?)");
 
-    $insA->bind_param("sisssssiii",
+    $insA->bind_param(
+        "sisssssiii",
         $idjenispenjualan,
         $notaterpilih,
         $resK['idmember'],
@@ -87,18 +91,19 @@ try {
     $qR->execute();
     $resR = $qR->get_result();
 
-    if($resR->num_rows == 0){
+    if ($resR->num_rows == 0) {
         throw new Exception("Barang kosong!");
     }
 
-    while($row = $resR->fetch_assoc()){
+    while ($row = $resR->fetch_assoc()) {
 
         // insert detail arsip
         $insD = $conn->prepare("INSERT INTO arsippenjualanrinci 
             (nonota,idbarang,namabarang,hargajual,hargamodal,qtyjual)
             VALUES (?,?,?,?,?,?)");
 
-        $insD->bind_param("isssii",
+        $insD->bind_param(
+            "isssii",
             $notaterpilih,
             $row['idbarang'],
             $row['namabarang'],
@@ -109,7 +114,7 @@ try {
         $insD->execute();
 
         // update stok
-        if($row['idbarang'] != 0){
+        if ($row['idbarang'] != 0) {
             $upd = $conn->prepare("UPDATE barang SET stok = stok - ? WHERE idbarang=?");
             $upd->bind_param("is", $row['qtyjual'], $row['idbarang']);
             $upd->execute();
@@ -117,8 +122,7 @@ try {
     }
 
     $conn->commit();
-
-} catch(Exception $e){
+} catch (Exception $e) {
     $conn->rollback();
     die("Gagal simpan transaksi: " . $e->getMessage());
 }
@@ -126,7 +130,7 @@ try {
 // =======================
 // 4. PRINT (DARI ARSIP)
 // =======================
-if($printnota != 0){
+if ($printnota != 0) {
 
     $printer = null;
 
@@ -144,7 +148,7 @@ if($printnota != 0){
         $qPrint->execute();
         $data = $qPrint->get_result();
 
-        if($data->num_rows == 0){
+        if ($data->num_rows == 0) {
             throw new Exception("Data print kosong!");
         }
 
@@ -155,49 +159,49 @@ if($printnota != 0){
         $tgl = $qT->get_result()->fetch_assoc();
         $tanggal = date("d M Y H:i", strtotime($tgl['tanggalselesai']));
 
-        for($i=1;$i<=2;$i++){
+        for ($i = 1; $i <= 2; $i++) {
 
             $printer->initialize();
 
             // logo aman
-            $logoPath = __DIR__."/image/angelcellprint.png";
-            if(file_exists($logoPath)){
-                try{
-                    $logo = EscposImage::load($logoPath,false);
+            $logoPath = __DIR__ . "/image/angelcellprint.png";
+            if (file_exists($logoPath)) {
+                try {
+                    $logo = EscposImage::load($logoPath, false);
                     $printer->setJustification(1);
                     $printer->bitImage($logo);
-                }catch(Exception $e){
+                } catch (Exception $e) {
                     $printer->text("ANGEL CELL\n");
                 }
             }
 
             $printer->text("Jalan Jangga-Terisi Desa jangga\n");
             $printer->text("Kecamatan Losarang\n");
-            $printer->text($tanggal."\n");
+            $printer->text($tanggal . "\n");
 
-            if($i==2) $printer->text("*** COPY NOTA ***\n");
+            if ($i == 2) $printer->text("*** COPY NOTA ***\n");
 
             $printer->text("--------------------------------\n");
 
             $printer->setJustification(0);
-            $printer->text("Kasir : ".$namakasir."\n");
+            $printer->text("Kasir : " . $namakasir . "\n");
 
             $printer->text("--------------------------------\n");
 
             // barang
             $total = 0;
-            while($row = $data->fetch_assoc()){
+            while ($row = $data->fetch_assoc()) {
 
-                $printer->text(substr($row['namabarang'],0,40)."\n");
+                $printer->text(substr($row['namabarang'], 0, 40) . "\n");
 
                 $printer->setJustification(2);
                 $sub = $row['hargajual'] * $row['qtyjual'];
                 $total += $sub;
 
                 $printer->text(
-                    number_format($row['hargajual'],0,'.','.').
-                    " x ".$row['qtyjual']." ".
-                    number_format($sub,0,'.','.')."\n"
+                    number_format($row['hargajual'], 0, '.', '.') .
+                        " x " . $row['qtyjual'] . " " .
+                        number_format($sub, 0, '.', '.') . "\n"
                 );
 
                 $printer->setJustification(0);
@@ -206,17 +210,17 @@ if($printnota != 0){
             $printer->setJustification(2);
             $printer->text("--------------------------\n");
 
-            if($diskon > 0){
-                $printer->text("Total: ".number_format($total,0,'.','.')."\n");
-                $printer->text("Diskon: ".number_format($diskon,0,'.','.')."\n");
+            if ($diskon > 0) {
+                $printer->text("Total: " . number_format($total, 0, '.', '.') . "\n");
+                $printer->text("Diskon: " . number_format($diskon, 0, '.', '.') . "\n");
             }
 
             $printer->setEmphasis(true);
-            $printer->text("Grand Total: ".number_format($grandtotal,0,'.','.')."\n");
+            $printer->text("Grand Total: " . number_format($grandtotal, 0, '.', '.') . "\n");
             $printer->setEmphasis(false);
 
-            $printer->text("Tunai: ".number_format($tunai,0,'.','.')."\n");
-            $printer->text("Kembali: ".number_format($kembali,0,'.','.')."\n");
+            $printer->text("Tunai: " . number_format($tunai, 0, '.', '.') . "\n");
+            $printer->text("Kembali: " . number_format($kembali, 0, '.', '.') . "\n");
 
             $printer->setJustification(1);
             $printer->feed();
@@ -232,17 +236,16 @@ if($printnota != 0){
         $printer->close();
 
         echo "<h2 style='color:green'>Print berhasil</h2>";
+    } catch (Exception $e) {
 
-    } catch(Exception $e){
-
-        if($printer){
+        if ($printer) {
             $printer->close();
         }
 
         // fallback jika printer error
         echo "<div style='background:red;color:white;padding:20px'>";
         echo "<h2>PRINT GAGAL</h2>";
-        echo "Error: ".$e->getMessage()."<br><br>";
+        echo "Error: " . $e->getMessage() . "<br><br>";
         echo "Solusi:<br>";
         echo "1. Cek printer nyala<br>";
         echo "2. Cek nama printer 'FK80 Printer'<br>";
@@ -259,6 +262,5 @@ if($printnota != 0){
 $conn->query("DELETE FROM keranjangbelanja WHERE nonota=$notaterpilih");
 $conn->query("DELETE FROM keranjangrinci WHERE nonota=$notaterpilih");
 
-echo "<br>Kembali Rp ".number_format($kembali,0,'.','.');
+echo "<br>Kembali Rp " . number_format($kembali, 0, '.', '.');
 header("Refresh:2;URL='pilihnota.php'");
-?>

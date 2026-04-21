@@ -1,3 +1,114 @@
 <?php
- goto ZNwsC; ZNwsC: ?>
-<link href="image\favicon.ico"rel="icon"><meta content="width=device-width,initial-scale=1"name="viewport"><meta charset="UTF-8"><html><head><title>Proses</title><link href="css/main.css"rel="stylesheet"></head><body><section id="searchbar"><br><br><?php  goto oEIeW; yuHPI: if ($hargajual == 0) { include "\160\145\x73\x61\x6e\x65\x72\x72\x6f\x72\56\x70\x68\160"; echo "\x42\141\x72\x61\156\x67\x20\x62\145\154\x75\x6d\x20\141\x64\141\x20\150\x61\162\x67\141\x3c\x62\x72\x3e"; echo "\x54\151\144\x61\x6b\x20\142\157\154\145\150\40\144\x69\x6a\165\141\154"; header("\x52\145\x66\162\x65\x73\x68\72\40\63\x3b\x55\x52\x4c\x3d\x27\156\157\x74\141\160\x65\x6e\x6a\x75\x61\154\x61\156\56\x70\150\x70\47"); die; } else { $namabarang = rtrim($namabarang); $hargajual = rtrim($hargajual); $qtyjual = rtrim($qtyjual); $namabarang = checkString($namabarang); $hargajual = checkNumber($hargajual); $qtyjual = checkNumber($qtyjual); $error = 0; $querytotbarang = "\123\x45\114\105\103\x54\40\x6e\141\155\x61\142\x61\x72\x61\156\x67\x2c\x20\103\x4f\x55\x4e\124\x28\x2a\51\x20\141\x73\x20\x74\x6f\164\x61\154\142\x61\x72\141\x6e\x67\156\x6f\x74\141\x20\x46\122\117\115\x20\153\x65\162\x61\156\152\141\156\147\162\151\156\143\x69\x20\127\110\105\x52\x45\x20\156\157\x6e\157\164\141\75\47{$notaterpilih}\x27"; $resulttotbarang = mysqli_query($conn, $querytotbarang); $cektotnota = mysqli_fetch_assoc($resulttotbarang); if ($idbarang != 0) { $querystokbarang = "\x53\x45\114\105\x43\x54\x20\x2a\40\x46\x52\x4f\x4d\40\142\141\162\x61\x6e\147\40\x57\110\x45\x52\x45\40\151\144\x62\x61\162\141\x6e\x67\x20\75\x20{$idbarang}\40\114\x49\x4d\111\124\40\x31"; $resultstokbarang = mysqli_query($conn, $querystokbarang); $stokbarang = mysqli_fetch_assoc($resultstokbarang); $stok = $stokbarang["\163\164\x6f\x6b"]; if ($stok < $qtyjual) { include "\x70\145\163\141\156\145\x72\x72\157\162\56\x70\x68\x70"; echo "\123\x74\x6f\153\40\164\151\144\x61\153\40\x63\x75\153\165\160\74\x62\x72\x3e"; echo "\110\x75\142\x75\x6e\x67\x69\x20\101\104\115\x49\116"; header("\x52\145\146\162\x65\163\150\x3a\40\65\73\125\122\114\75\47\156\157\164\141\x70\145\156\152\x75\x61\154\x61\156\56\160\x68\x70\47"); $error = 1; die; } } else { if ($cektotnota["\x74\157\164\141\154\x62\141\x72\141\156\147\x6e\x6f\164\x61"] == 1 and $cektotnota["\156\141\x6d\x61\x62\141\162\141\x6e\147"] == NULL) { $query = "\125\x50\x44\x41\124\105\x20\153\145\162\x61\x6e\x6a\141\x6e\x67\x72\151\156\143\151\40\123\x45\x54\x20\x69\144\x62\x61\x72\x61\x6e\147\x3d\47{$idbarang}\x27\54\x20\x6e\141\x6d\141\142\x61\x72\141\x6e\x67\x3d\x27{$namabarang}\47\54\40\150\141\162\x67\141\x6a\x75\141\154\x3d\47{$hargajual}\x27\x2c\x20\x68\141\162\x67\141\155\x6f\144\141\x6c\x3d\47{$hargamodal}\47\x2c\x20\x71\164\171\152\165\141\x6c\x3d\x27{$qtyjual}\x27\x20\167\150\x65\x72\x65\x20\156\157\156\157\164\141\x20\75\40\x27{$notaterpilih}\47\40\x4c\x49\115\111\124\40\61"; $success = $conn->query($query); echo "\x55\x70\x64\141\164\145\40\x42\145\162\150\x61\163\x69\x6c"; } else { $query = "\x49\x4e\123\105\x52\x54\x20\111\x4e\x54\117\40\x6b\x65\x72\x61\156\x6a\141\x6e\147\162\x69\156\x63\151\40\x28\156\157\156\x6f\x74\x61\x2c\x69\144\142\141\x72\141\156\147\54\x6e\141\155\141\x62\x61\x72\141\156\x67\x2c\150\141\162\x67\141\152\165\141\x6c\54\150\141\162\x67\x61\155\157\144\141\154\x2c\161\164\171\x6a\x75\141\x6c\51\xa\40\x20\x20\x20\x20\40\x20\x20\x20\40\x20\x20\x20\x20\40\x20\x56\x41\x4c\125\105\123\x28\47" . $notaterpilih . "\47\x2c\47" . $idbarang . "\x27\54\47" . $namabarang . "\47\x2c\x27" . $hargajual . "\x27\x2c\x27" . $hargamodal . "\47\x2c\47" . $qtyjual . "\47\x29"; $success = $conn->query($query); echo "\x54\x61\x6d\x62\141\x68\x20\102\141\x72\165\40\123\145\156\x64\151\162\x69\x20\102\145\x72\150\141\163\151\154"; } } if ($error != 1 and $idbarang != 0) { if ($cektotnota["\164\x6f\164\141\154\x62\x61\x72\x61\156\147\x6e\157\164\141"] == 1 and $cektotnota["\156\x61\x6d\141\142\141\x72\141\x6e\147"] == NULL) { $query = "\x55\120\x44\101\124\105\x20\x6b\x65\162\141\156\x6a\x61\x6e\x67\x72\151\x6e\x63\151\x20\x53\x45\x54\x20\x69\144\x62\x61\x72\x61\x6e\x67\x3d\47{$idbarang}\47\x2c\40\x6e\141\x6d\x61\x62\141\x72\x61\x6e\147\x3d\x27{$namabarang}\x27\x2c\40\150\141\162\x67\x61\x6a\165\141\154\x3d\x27{$hargajual}\x27\54\40\150\x61\162\x67\141\155\x6f\x64\x61\x6c\x3d\x27{$hargamodal}\47\54\x20\161\x74\x79\152\165\x61\154\75\47{$qtyjual}\x27\x20\x77\x68\145\x72\x65\40\x6e\157\156\x6f\164\141\x20\x3d\x20\x27{$notaterpilih}\47\40\114\111\115\x49\x54\40\x31"; $success = $conn->query($query); echo "\x55\160\144\141\x74\x65\x20\102\x65\x72\x68\141\x73\151\154"; } else { $querycekkosong = "\x53\105\114\x45\x43\124\x20\156\x61\155\141\x62\141\x72\x61\156\147\40\106\x52\117\115\40\153\145\x72\141\156\x6a\x61\x6e\x67\x72\151\156\x63\x69\40\127\110\105\122\105\x20\x6e\x6f\x6e\x6f\164\141\x3d\x27{$notaterpilih}\47\x20\x41\116\104\x20\x6e\141\155\x61\142\x61\162\x61\x6e\x67\75\47{$namabarang}\x27"; $resultcekkosong = mysqli_query($conn, $querycekkosong); $cekkosong = mysqli_fetch_assoc($resultcekkosong); $ceknama = $cekkosong["\x6e\x61\x6d\141\x62\x61\162\x61\156\x67"]; if ($ceknama == $namabarang) { $query = "\x55\x50\x44\x41\x54\x45\x20\153\145\162\x61\156\x6a\141\156\147\x72\151\x6e\143\151\40\123\x45\x54\40\x69\x64\142\141\x72\x61\x6e\147\x3d\47{$idbarang}\47\54\40\156\141\x6d\141\x62\141\x72\x61\156\x67\75\x27{$namabarang}\x27\x2c\40\150\141\x72\x67\x61\152\165\141\x6c\75\47{$hargajual}\x27\x2c\x20\x68\x61\x72\x67\x61\x6d\157\144\141\x6c\75\x27{$hargamodal}\47\54\40\161\164\x79\x6a\165\x61\154\x3d\x20\x71\164\x79\152\x75\141\x6c\x20\53\40{$qtyjual}\x20\x77\150\145\x72\145\40\156\157\156\x6f\164\141\x20\x3d\40\47{$notaterpilih}\x27\x20\101\x4e\104\x20\156\141\x6d\x61\x62\x61\162\141\x6e\147\75\x27{$namabarang}\x27"; $success = $conn->query($query); echo "\x54\x61\155\142\141\150\x20\x51\164\x79\40\102\145\x72\150\141\x73\151\154"; } else { $query = "\x49\116\123\105\x52\124\x20\111\116\124\x4f\40\153\145\x72\x61\x6e\152\141\156\x67\162\151\x6e\143\151\x20\50\x6e\157\x6e\x6f\164\141\x2c\x69\144\x62\141\162\141\156\147\54\156\x61\155\x61\x62\x61\x72\x61\156\147\x2c\x68\141\162\147\x61\x6a\x75\141\154\x2c\x68\x61\x72\147\141\155\157\x64\141\154\54\x71\x74\171\x6a\x75\x61\x6c\51\12\x20\x20\40\40\40\40\40\x20\x20\x20\40\x20\40\x20\x20\40\40\x20\40\40\x20\40\x20\40\x56\101\114\125\105\123\x28\x27" . $notaterpilih . "\47\54\x27" . $idbarang . "\x27\x2c\47" . $namabarang . "\x27\x2c\47" . $hargajual . "\47\54\x27" . $hargamodal . "\x27\x2c\x27" . $qtyjual . "\47\x29"; $success = $conn->query($query); echo "\x54\141\155\x62\x61\x68\x20\x42\x61\x72\x75\40\x42\145\x72\x68\x61\163\x69\x6c"; } } if (!$success) { include "\x70\x65\x73\141\156\145\x72\162\157\x72\x2e\x70\150\x70"; echo "\124\145\162\x6a\x61\x64\151\x20\x4b\145\x73\141\x6c\x61\x68\141\156\74\142\162\76"; echo "\110\x75\x62\x75\156\147\x69\40\101\x44\115\x49\x4e"; header("\122\x65\146\x72\145\x73\150\72\x20\x35\x3b\x55\122\114\75\x27\x6e\x6f\164\x61\x70\x65\156\x6a\x75\141\154\x61\156\56\160\150\160\x27"); die; } } include "\160\145\x73\141\156\164\x65\x72\x69\155\x61\153\141\163\151\150\x2e\x70\150\160"; echo "\74\142\162\x3e\x53\165\x64\141\150\40\x6d\x61\x73\x75\x6b\54\x20\124\x65\162\151\155\141\x6b\141\x73\x69\x68\41\74\142\x72\x3e"; header("\122\x65\x66\162\x65\x73\150\72\x20\60\x3b\125\x52\x4c\75\x27\156\x6f\x74\x61\160\145\x6e\152\165\x61\x6c\141\156\x2e\x70\x68\160\x27"); $conn->close(); echo "\x3c\57\x73\x70\141\156\76"; } goto Ret74; ek2wn: if (!isset($_SESSION["\165\163\x65\x72"])) { header("\x4c\157\143\x61\164\151\157\156\x3a\x20\163\145\x61\162\x63\150\142\141\162\141\156\x67\x2e\x70\150\160"); die; } goto T5blI; veacV: $hargajual = $conn->real_escape_string($_POST["\x68\141\x72\147\141\x6a\x75\x61\x6c"]); goto hzY5T; AOBLO: $qtyjual = $conn->real_escape_string($_POST["\x71\x74\x79\152\165\141\x6c"]); goto yuHPI; KbvB0: $namabarang = $conn->real_escape_string($_POST["\156\141\x6d\141\142\141\162\141\x6e\147"]); goto veacV; hzY5T: $hargamodal = $conn->real_escape_string($_POST["\150\141\162\147\x61\155\x6f\144\141\154"]); goto AOBLO; hXst5: require_once "\144\142\x61\x6e\147\x65\x6c\143\x6f\156\x6e\x65\x63\164\56\x70\x68\x70"; goto ek2wn; Usfgr: $idbarang = $conn->real_escape_string($_POST["\151\x64\142\141\x72\141\156\147"]); goto KbvB0; errmA: echo "\74\144\x69\166\40\141\154\x69\147\156\x3d\x27\x63\145\x6e\x74\145\162\47\x3e\74\163\160\141\156\40\x73\x74\x79\x6c\145\x20\x3d\47\146\157\156\x74\x2d\163\151\172\x65\x3a\x32\65\x70\x78\73\x63\157\x6c\x6f\162\x3a\43\x46\106\106\47\x3e"; goto Usfgr; Wc4ZS: function checkNumber($number) { $number = strip_tags($number); $number = htmlspecialchars($number); $number = filter_var($number, FILTER_VALIDATE_INT); return $number; } goto jyjUi; oEIeW: session_start(); goto hXst5; T5blI: function checkString($string) { $string = strip_tags($string); $string = htmlspecialchars($string); $string = filter_var($string, FILTER_SANITIZE_STRING, FILTER_FLAG_STRIP_HIGH); return $string; } goto Wc4ZS; jyjUi: $notaterpilih = $_SESSION["\x6e\157\164\x61\164\145\x72\x70\151\x6c\x69\150"]; goto errmA; Ret74: ?>
+session_start();
+require_once "dbangelconnect.php";
+
+// ================= CEK LOGIN =================
+if (!isset($_SESSION["user"])) {
+    header("Location: searchbarang.php");
+    exit;
+}
+
+// ================= FUNCTION =================
+function checkString($string)
+{
+    return htmlspecialchars(strip_tags($string));
+}
+
+function checkNumber($number)
+{
+    return (int) filter_var($number, FILTER_VALIDATE_INT);
+}
+
+// ================= AMBIL SESSION =================
+$notaterpilih = $_SESSION["notaterpilih"];
+
+// ================= AMBIL DATA =================
+if (isset($_POST["kodebarang"])) {
+    // ====== DARI SCANNER ======
+    $kode = $conn->real_escape_string($_POST["kodebarang"]);
+
+    // DEBUG
+    echo "SCAN MASUK: " . $kode . "<br>";
+
+    $q = mysqli_query($conn, "SELECT * FROM barang WHERE kodebarang='$kode' LIMIT 1");
+    $data = mysqli_fetch_assoc($q);
+
+    if (!$data) {
+        echo "BARCODE TIDAK DITEMUKAN";
+        exit;
+    }
+
+    $idbarang   = $data["idbarang"];
+    $namabarang = $data["namabarang"];
+    $hargajual  = $data["hargaecer"];
+    $hargamodal = $data["hargamodal"];
+    $qtyjual    = isset($_POST["qtyjual"]) ? (int)$_POST["qtyjual"] : 1;
+} else {
+    // ====== INPUT MANUAL ======
+    $idbarang   = $conn->real_escape_string($_POST["idbarang"]);
+    $namabarang = $conn->real_escape_string($_POST["namabarang"]);
+    $hargajual  = $conn->real_escape_string($_POST["hargajual"]);
+    $hargamodal = $conn->real_escape_string($_POST["hargamodal"]);
+    $qtyjual    = $conn->real_escape_string($_POST["qtyjual"]);
+}
+
+// ================= VALIDASI =================
+if ($hargajual == 0) {
+    echo "Barang belum ada harga, tidak bisa dijual";
+    exit;
+}
+
+$namabarang = checkString($namabarang);
+$hargajual  = checkNumber($hargajual);
+$qtyjual    = checkNumber($qtyjual);
+
+// ================= CEK STOK =================
+if ($idbarang != 0) {
+    $qstok = mysqli_query($conn, "SELECT stok FROM barang WHERE idbarang='$idbarang' LIMIT 1");
+    $stokdata = mysqli_fetch_assoc($qstok);
+    $stok = $stokdata["stok"];
+
+    if ($stok < $qtyjual) {
+        echo "STOK TIDAK CUKUP";
+        exit;
+    }
+}
+
+// ================= CEK SUDAH ADA DI NOTA =================
+$qcek = mysqli_query($conn, "
+    SELECT * FROM keranjangrinci 
+    WHERE nonota='$notaterpilih' 
+    AND idbarang='$idbarang'
+");
+$cek = mysqli_fetch_assoc($qcek);
+
+if ($cek) {
+    // ===== UPDATE QTY =====
+    $query = "
+        UPDATE keranjangrinci 
+        SET qtyjual = qtyjual + $qtyjual 
+        WHERE idkeranjangrinci = '{$cek['idkeranjangrinci']}'
+    ";
+    $success = $conn->query($query);
+    echo "QTY DITAMBAH";
+} else {
+    // ===== INSERT BARU =====
+    $query = "
+        INSERT INTO keranjangrinci 
+        (nonota, idbarang, namabarang, hargajual, hargamodal, qtyjual)
+        VALUES 
+        ('$notaterpilih','$idbarang','$namabarang','$hargajual','$hargamodal','$qtyjual')
+    ";
+    $success = $conn->query($query);
+    echo "BARANG DITAMBAHKAN";
+}
+
+// ================= ERROR HANDLING =================
+if (!$success) {
+    echo "TERJADI KESALAHAN";
+    exit;
+}
+
+// ================= SELESAI =================
+header("Location: notapenjualan.php");
+exit;

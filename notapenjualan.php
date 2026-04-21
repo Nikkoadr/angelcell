@@ -1,117 +1,568 @@
 <?php
- goto Lb3Ev; jACDK: $querygrosir = mysqli_query($conn, $sqlgrosir); goto XY9k5; UozJi: $resultservis = mysqli_fetch_array($queryservis, MYSQLI_ASSOC); goto aMljG; aMljG: $nama = $resultservis["\x6e\141\x6d\141"] ?? null; goto dr82z; l94HI: $pin = $resultservis["\160\x69\156"] ?? null; goto b7ldf; NW2GO: $resultnota = mysqli_fetch_array($querykeranjang, MYSQLI_ASSOC); goto PpQ_d; X1ehN: $sqlmember = "\x53\x45\114\x45\x43\x54\40\52\40\x46\x52\117\115\x20\153\145\162\x61\x6e\x6a\x61\x6e\x67\142\x65\x6c\141\156\152\141\40\153\142\12\40\x20\x20\x20\111\116\x4e\105\x52\x20\112\x4f\x49\116\40\x6d\145\155\142\145\162\x20\155\40\117\116\40\x6b\x62\56\x69\144\x6d\145\x6d\x62\x65\x72\x20\x3d\40\x6d\56\x69\144\155\x65\155\x62\x65\x72\xa\x20\x20\40\40\127\x48\x45\122\105\x20\x6b\142\x2e\x6e\x6f\156\157\164\x61\40\x3d\x20{$notaterpilih}"; goto A1Ogd; R1Rot: $namamember = $resultmember["\x6e\x61\x6d\x61\x6d\x65\155\142\145\162"] ?? null; goto VaoWF; v9F_9: $status = $resultservis["\x73\164\x61\x74\x75\x73"] ?? null; goto WP6MN; Opt1l: echo $notaterpilih; goto HKKhG; oUmny: $sqlgrosir = "\x53\105\x4c\105\103\x54\x20\x2a\40\106\x52\117\x4d\40\153\x65\162\141\156\x6a\x61\156\147\142\x65\154\x61\156\x6a\x61\x20\153\x62\40\111\116\116\x45\x52\x20\x4a\x4f\x49\116\40\155\x65\155\142\145\x72\x20\x6d\40\x4f\116\x20\153\x62\56\151\x64\x6d\145\155\142\145\x72\x20\75\x20\155\56\151\144\x6d\x65\155\142\145\162\40\x57\110\105\122\105\40\153\x62\56\x6e\157\156\x6f\164\141\x20\x3d\40{$notaterpilih}"; goto jACDK; IlGkb: if ($cektotnota["\164\x6f\164\141\x6c\x64\x61\164\x61"] == 0) { header("\x52\145\146\162\x65\163\150\72\x20\60\x3b\x55\122\x4c\x3d\47\x70\x69\154\x69\150\156\x6f\164\x61\56\160\x68\160\47"); die; } goto aCjKz; XN2pd: $conn = null; goto sNY1q; q9o35: if (!isset($_SESSION["\x75\163\x65\162"])) { header("\x4c\x6f\x63\x61\164\x69\157\156\72\40\154\157\x67\151\156\x2e\160\150\x70"); die; } goto GuJrB; IX4ab: if ($idjenispenjualan == "\x32") { ?>
-<th style="text-align:center">Grosir</th><?php  } else { ?>
-<th style="text-align:center">Ecer</th><?php  } goto Gcq7j; dr82z: $merk = $resultservis["\x6d\x65\162\x6b"] ?? null; goto Gy3Am; gUiQQ: $querykeranjang = mysqli_query($conn, $sqlkeranjang); goto NW2GO; llm0Y: include_once "\x68\145\x61\x64\x65\x72\x2e\x70\150\x70"; goto EjEC7; XY9k5: $resultgrosir = mysqli_fetch_array($querygrosir, MYSQLI_ASSOC); goto pW7DR; JWvmT: ?>
-<div class="subtotalnota"><aside id="sidebarnota2"><div class="dark"><?php  goto QHazN; Lb3Ev: session_start(); goto MfRyw; PpQ_d: $tanggalmasuk = $resultnota["\x74\x61\x6e\x67\147\141\x6c\x6d\141\x73\165\153"] ?? null; goto ixw67; oZJqx: $sqlkeranjang = "\123\x45\114\x45\x43\124\40\x2a\x20\x46\122\x4f\x4d\x20\153\x65\162\141\156\x6a\141\156\x67\142\145\x6c\x61\x6e\x6a\141\x20\x6b\142\12\x20\40\x20\x20\111\x4e\x4e\x45\x52\x20\112\x4f\x49\116\x20\153\x65\162\141\156\x6a\141\156\x67\x72\x69\x6e\x63\151\40\153\x72\40\x4f\x4e\40\x6b\142\x2e\x6e\x6f\x6e\x6f\164\x61\x20\75\x20\153\162\56\156\x6f\156\157\164\141\12\40\x20\40\40\127\x48\x45\122\x45\x20\x6b\x72\x2e\x6e\157\156\x6f\x74\x61\x20\75\x20{$notaterpilih}\xa\x20\40\x20\40\117\122\104\x45\x52\40\x42\131\x20\153\x62\x2e\151\x64\153\x65\162\141\x6e\x6a\x61\156\147\142\x65\154\x61\x6e\152\x61\x20\x41\123\x43"; goto gUiQQ; zIfYE: if (!isset($_SESSION["\x6e\x6f\x74\x61\x74\x65\162\160\151\x6c\151\150"])) { header("\122\x65\x66\x72\145\163\x68\x3a\x20\x31\73\x55\122\x4c\75\x27\x70\x69\x6c\151\x68\x6e\157\164\141\x2e\160\x68\160\x27"); } goto orTYK; jJMzR: ?>
-<div class="buttonpilihnota"><form action="tambahbarangnotapenjualansendiri.php"method="post"><input name="notaterpilih"value="<?php  goto Opt1l; E5Xn3: $resultmember = mysqli_fetch_array($querymember, MYSQLI_ASSOC); goto DamJh; A1Ogd: $querymember = mysqli_query($conn, $sqlmember); goto E5Xn3; HKKhG: ?>
-"type="hidden"readonly> <button class="button_hijau"type="submit">BARANG MANUAL</button></form></div><link href="DataTables/datatables.min.css"rel="stylesheet"type="text/css"><script src="DataTables/jquery-3.5.1.js"type="text/javascript"></script><script src="DataTables/datatables.min.js"type="text/javascript"></script><div class="limiter"><div class="container-table100"><div class="wrap-table100"><div class="m-b-110 table100 ver3"><div class="dark2"><table border="0"data-vertable="ver3"class="display"id="example"style="width:100%"><thead class="sticky-stuff"><tr><th style="text-align:center">Nama</th><?php  goto IX4ab; lepf9: $sql = "\123\x45\x4c\105\x43\124\x20\x2a\40\x46\x52\x4f\115\x20\142\141\162\141\156\x67\40\127\110\x45\122\x45\x20\x61\x6b\x74\151\146\75\47\x31\47\x20\117\x52\104\x45\122\40\102\131\40\x6e\x61\155\141\x62\141\x72\x61\x6e\x67\40\101\x53\x43"; goto c4fS_; aCjKz: $sqlkeranjangrinci = "\x53\x45\114\x45\x43\124\x20\52\x20\106\122\x4f\115\40\153\x65\x72\141\156\x6a\x61\x6e\x67\162\151\156\143\x69\xa\x20\40\40\40\127\110\x45\x52\x45\40\156\157\156\157\x74\x61\40\x3d\40{$notaterpilih}\xa\40\x20\x20\x20\x4f\122\104\105\122\40\x42\131\40\151\x64\153\x65\x72\141\156\152\x61\156\147\x72\x69\x6e\x63\x69\x20\x41\x53\103"; goto PCw7n; cNerd: ?>
-</tbody></table><?php  goto nbviP; ixw67: $idjenispenjualan = $resultnota["\151\144\x6a\145\x6e\151\x73\160\145\156\152\x75\x61\154\141\156"] ?? null; goto b6Xlv; e77_I: $querytotbarang = "\123\105\x4c\105\103\x54\x20\103\x4f\125\x4e\124\50\52\x29\x20\141\x73\x20\164\157\x74\141\154\144\141\164\x61\40\x46\122\117\x4d\x20\x6b\x65\162\141\156\152\x61\156\147\x72\151\156\x63\151\40\x57\x48\105\122\x45\40\x6e\157\x6e\x6f\164\x61\75\47{$notaterpilih}\47"; goto wv8fN; Gcq7j: ?>
-<th style="text-align:center">Stok</th><th style="text-align:center">Tambah</th><th style="text-align:center">Pilih</th><th style="display:none">Kode</th><th style="display:none">Tags</th></tr></thead><tbody><?php  goto lepf9; TzZYJ: ?>
-<nav><ul><?php  goto llm0Y; Gy3Am: $tipe = $resultservis["\x74\151\x70\145"] ?? null; goto wEutb; QHazN: if ($status == "\x64\x69\153\x65\162\152\x61\153\141\x6e") { ?>
-<form action="prosesservisselesaidikerjakan.php"method="POST"class="quote"name="myform"onkeyup="calculate()"><label>Sub Total :</label> <input name="subtotal2"value="<?php  echo $ssubtotal; ?>
-"readonly><br><input name="subtotal"value="<?php  echo $subtotal; ?>
-"type="hidden"> <input name="nonota"value="<?php  echo $notaterpilih; ?>
-"type="hidden"> <input name="iddataservis"value="<?php  echo $iddataservis; ?>
-"type="hidden"><br><br><div align="center"><button class="button_hijau"type="submit">SERVIS SELESAI</button></div></form><?php  } else { if ($status == "\144\x69\x74\145\162\x69\155\x61") { ?>
-<form action="prosesnotapengambilan.php"method="POST"class="quote"name="myform"onkeyup="calculate()"><label>Sub Total :</label> <input name="subtotal2"value="<?php  echo $ssubtotal; ?>
-"readonly><br><input name="subtotal"value="<?php  echo $subtotal; ?>
-"type="hidden"> <input name="nonota"value="<?php  echo $notaterpilih; ?>
-"type="hidden"> <input name="iddataservis"value="<?php  echo $iddataservis; ?>
-"type="hidden"> <input name="tanggaldikerjakan"value="<?php  echo date("\x64\40\x4d\x20\131", strtotime($tanggalmasuk)); ?>
-"type="hidden"><br><br><div align="center"><button class="button_hijau"type="submit">PRINT NOTA PENGAMBILAN</button></div></form><?php  } else { if ($status == "\x73\145\x72\x76\151\x73\40\x64\151\143\x61\156\x63\145\x6c") { ?>
-<form action="proseshapusservisdicancel.php"method="POST"class="quote"name="myform"onkeyup="calculate()"><label>Kasir :</label> <input name="namauser"value="<?php  echo $namauser; ?>
-"readonly> <label>Sub Total :</label> <input name="subtotal"value="0"readonly><br><input name="nonota"value="<?php  echo $notaterpilih; ?>
-"type="hidden"> <input name="iddataservis"value="<?php  echo $iddataservis; ?>
-"type="hidden"> <input name="idjenispenjualan"value="<?php  echo $idjenispenjualan; ?>
-"type="hidden"> <input name="nama"value="<?php  echo $nama; ?>
-"type="hidden"> <input name="merk"value="<?php  echo $merk; ?>
-"type="hidden"> <input name="tipe"value="<?php  echo $tipe; ?>
-"type="hidden"> <input name="nohp"value="<?php  echo $nohp; ?>
-"type="hidden"> <input name="diskon"value="<?php  echo $diskon; ?>
-"type="hidden"> <input name="tunai"value="<?php  echo $tunai; ?>
-"type="hidden"> <input name="kembalian"value="<?php  echo $kembalian; ?>
-"type="hidden"><br><br><div align="center"><button class="button_hijau"type="submit">AMBIL SERVIS DICANCEL</button></div></form><?php  } else { ?>
-<form action="print.php"method="POST"class="quote"name="myform"onkeyup="calculate()"><br><?php  echo "\x3c\151\155\x67\40\x69\x64\75\x22\x69\155\x61\x67\x65\x6b\141\x73\151\162\42\x20\163\162\x63\75\x22\x69\155\x61\x67\145\x2f" . $namauser . "\x2e\x70\156\x67\x22\x20\x2f\76"; ?>
-<br><br><label>Kasir :</label> <input name="namauser2"value="<?php  echo $namauser; ?>
-"readonly> <label>Sub Total :</label> <input name="subtotal2"value="<?php  echo $ssubtotal; ?>
-"readonly><br><label>Diskon :</label> <input name="diskon"value="0"type="number"><br><label>Tunai :</label> <input name="tunai"value=""type="number"required id="tunai"><br><label>Kembalian :</label> <input name="kembalian"value=""type="number"required><br><input name="namauser"value="<?php  echo $namauser; ?>
-"readonly id="namauser"hidden><br><span class="checkboxtext">Cetak Nota? </span><select name="printnota"><option value="1"selected>Ya</option><option value="0">Tidak</option></select><br><br><input name="subtotal"value="<?php  echo $subtotal; ?>
-"type="hidden"> <input name="notaterpilih"value="<?php  echo $notaterpilih; ?>
-"type="hidden"> <input name="idjenispenjualan"value="<?php  echo $idjenispenjualan; ?>
-"type="hidden"> <input name="iddataservis"value="<?php  echo $iddataservis; ?>
-"type="hidden"> <input name="idmember"value="<?php  echo $idmember; ?>
-"type="hidden"> <input name="kerusakan"value="<?php  echo $kerusakan; ?>
-"type="hidden"> <input name="kondisi"value="<?php  echo $kondisi; ?>
-"type="hidden"> <input name="nama"value="<?php  echo $nama; ?>
-"type="hidden"> <input name="merk"value="<?php  echo $merk; ?>
-"type="hidden"> <input name="tipe"value="<?php  echo $tipe; ?>
-"type="hidden"> <input name="nohp"value="<?php  echo $nohp; ?>
-"type="hidden"> <input name="alamatgrosir"value="<?php  echo $alamatgrosir; ?>
-"type="hidden"> <input name="namamember"value="<?php  echo $namamember; ?>
-"type="hidden"> <button class="button_hijau"type="submit">BAYAR</button></form><?php  } } } goto f0YiZ; ehC1S: $iddataservis = $resultservis["\x69\144\144\x61\x74\141\x73\145\162\166\151\x73"] ?? null; goto v9F_9; mLsi2: if ($idjenispenjualan == "\x33") { ?>
-<div class="buttonpilihnota"><form action="prosescancelservis.php"method="post"onsubmit='return confirm("Yakin Cancel Servis?")'><input name="notaterpilih"value="<?php  echo $notaterpilih; ?>
-"type="hidden"> <input name="iddataservis"value="<?php  echo $iddataservis; ?>
-"type="hidden"> <button class="button_hapus"type="submit">CANCEL SERVIS</button></form></div><?php  } else { ?>
-<div class="buttonpilihnota"><form action="proseshapusnotapenjualan.php"method="post"onsubmit='return confirm("Yakin Hapus Nota?")'><input name="notaterpilih"value="<?php  echo $notaterpilih; ?>
-"type="hidden"> <button class="button_hapus"type="submit">HAPUS NOTA</button></form></div><?php  } goto jJMzR; pW7DR: $namamember = $resultgrosir["\x6e\141\155\141\155\145\155\x62\x65\162"] ?? null; goto MjR5j; MGU2Q: while ($resultkeranjangrinci = mysqli_fetch_array($querykeranjangrinci, MYSQLI_ASSOC)) { $idkeranjangrinci = $resultkeranjangrinci["\x69\144\153\x65\162\x61\156\x6a\141\x6e\147\162\x69\156\x63\x69"]; $idbarang = $resultkeranjangrinci["\151\x64\x62\141\x72\x61\x6e\x67"]; $namabarang = $resultkeranjangrinci["\156\141\x6d\x61\142\141\162\x61\x6e\147"]; $hargajual = $resultkeranjangrinci["\150\x61\162\x67\x61\x6a\x75\141\154"]; $hargamodal = $resultkeranjangrinci["\x68\141\x72\x67\141\x6d\157\x64\x61\x6c"]; $qtyjual = $resultkeranjangrinci["\161\x74\x79\152\x75\x61\x6c"]; $totalharga = $hargajual * $qtyjual; $subtotal = $subtotal + $totalharga; $shargajual = number_format($hargajual, 0, '', "\56"); $stotalharga = number_format($totalharga, 0, '', "\56"); $ssubtotal = number_format($subtotal, 0, '', "\56"); echo "\74\x74\162\40\143\x6c\141\163\163\x3d\42\x72\157\x77\x31\x30\60\x22\76"; echo "\x3c\164\144\x20\x63\x6c\x61\163\x73\75\x22\143\157\x6c\x75\155\156\61\60\x30\40\x63\x6f\154\165\x6d\x6e\x33\x22\40\x64\x61\x74\141\55\143\157\154\x75\x6d\156\75\42\x63\157\x6c\x75\x6d\156\x33\x22\76"; echo $namabarang; echo "\x3c\57\x64\151\166\x3e\x3c\57\164\x64\x3e"; echo "\x3c\x74\x64\40\143\x6c\x61\163\163\x3d\42\x63\x6f\154\165\x6d\156\x31\60\x30\40\x63\157\154\x75\x6d\156\x33\x22\40\144\x61\x74\x61\55\x63\157\x6c\165\155\x6e\75\x22\143\157\x6c\165\x6d\156\63\42\76"; echo $shargajual; echo "\74\57\146\157\156\164\76\74\57\164\x64\x3e"; echo "\x3c\x74\144\x20\x63\x6c\141\163\163\75\x22\143\x6f\154\x75\x6d\156\61\60\x30\x20\143\157\x6c\x75\x6d\156\64\42\40\x64\x61\164\141\x2d\143\x6f\x6c\165\155\x6e\x3d\x22\x63\x6f\154\x75\x6d\x6e\x34\x22\76"; echo $qtyjual; echo "\74\57\x74\144\x3e"; echo "\74\164\144\40\x63\x6c\x61\x73\x73\x3d\x22\x63\157\154\x75\x6d\x6e\x31\x30\x30\x20\143\x6f\x6c\165\x6d\156\x34\42\40\x64\141\164\141\55\x63\x6f\x6c\165\x6d\x6e\x3d\x22\143\x6f\x6c\x75\155\156\x34\x22\76"; echo $stotalharga; echo "\x3c\x2f\x74\144\x3e"; ?>
-<td class="column100 column6"data-column="column6"><form action="editnotapenjualanbarang.php"method="post"><input name="destination"value="<?php  echo $_SERVER["\122\x45\x51\x55\105\123\x54\x5f\x55\122\111"]; ?>
-"type="hidden"> <input name="idbarang"value="<?php  echo $idbarang; ?>
-"type="hidden"> <input name="idkeranjangrinci"value="<?php  echo $idkeranjangrinci; ?>
-"type="hidden"> <input name="namabarang"value="<?php  echo $namabarang; ?>
-"type="hidden"> <input name="hargajual"value="<?php  echo $hargajual; ?>
-"type="hidden"> <input name="hargamodal"value="<?php  echo $hargamodal; ?>
-"type="hidden"> <input name="qtyjual"value="<?php  echo $qtyjual; ?>
-"type="hidden"> <input name="notaterpilih"value="<?php  echo $notaterpilih; ?>
-"type="hidden"> <input name="submit"type="image"class="gambartabel"src="image/edit.png"></form></td><?php  } goto cNerd; AarRn: $kondisi = $resultservis["\x6b\157\156\x64\151\163\151"] ?? null; goto l94HI; urrzv: ?>
-<meta content="width=device-width,initial-scale=1"name="viewport"><meta charset="UTF-8"><link href="image\favicon.ico"rel="icon"><html><head><title>Nota Penjualan</title><link href="css/main.css"rel="stylesheet"></head><header><div class="container"><?php  goto D4lgB; HP9ix: ?>
-</tbody><script type="text/javascript">$(document).ready(function(){$("#example").DataTable()}),$(".qtyplus").click(function(a){a.preventDefault();var t=$(this),e=t.prev("input[name="+t.attr("field")+"]"),n=parseInt(e.val());isNaN(n)?e.val(1):e.val(n+1)}),$(".qtyminus").click(function(a){a.preventDefault();var t=$(this),e=t.next("input[name="+t.attr("field")+"]"),n=parseInt(e.val());isNaN(n)?e.val(1):e.val(1==n?1:n-1)})</script></table></div><section><div class="limiter"><div class="container-table100"><div class="wrap-table100"><div class="m-b-110 table100 ver3"><table border="0"data-vertable="ver3"><thead><tr class="head row100"><th class="column100 column2"data-column="column2">Nama</th><th class="column100 column3"data-column="column3">Harga</th><th class="column100 column4"data-column="column4">Qty</th><th class="column100 column5"data-column="column5">Total Harga</th><th class="column100 column6"data-column="column6">Rubah</th></tr></thead><tbody><?php  goto MGU2Q; f0YiZ: ?>
-</div></aside></div></div></div></div></div></section><script src="https://cdnjs.cloudflare.com/ajax/libs/autonumeric/1.8.2/autoNumeric.js"></script><script>$(".testInput").autoNumeric("init",{aSep:".",aDec:",",aForm:!0,vMax:"999999999",vMin:"-999999999"});var form=document.forms.myform,subtotal=form.subtotal,diskon=form.diskon,tunai=form.tunai,output=form.kembalian;window.calculate=function(){var t=parseInt(subtotal.value)||0,a=parseInt(diskon.value)||0,o=parseInt(tunai.value)||0;output.value=o-(t-a).toFixed(0),$(".testInput").autoNumeric("init",{aSep:".",aDec:",",aForm:!0,vMax:"999999999",vMin:"-999999999"})}</script><?php  goto XN2pd; MfRyw: require_once "\144\142\x61\156\147\145\x6c\143\x6f\x6e\x6e\x65\x63\x74\x2e\x70\150\x70"; goto q9o35; DamJh: $idmember = $resultmember["\x69\144\x6d\145\x6d\x62\x65\x72"] ?? null; goto R1Rot; orTYK: $notaterpilih = $_SESSION["\156\157\x74\x61\x74\145\x72\160\x69\154\151\150"]; goto e77_I; MjR5j: $alamatgrosir = $resultgrosir["\141\154\141\155\x61\164"] ?? null; goto jmkAl; JWbuh: $pola = $resultservis["\x70\157\154\x61"] ?? null; goto X1ehN; WP6MN: $nohp = $resultservis["\x6e\x6f\x68\160"] ?? null; goto BAOJY; PCw7n: $querykeranjangrinci = mysqli_query($conn, $sqlkeranjangrinci); goto oZJqx; Hmt7w: while ($result = mysqli_fetch_array($query, MYSQLI_ASSOC)) { $idbarang = $result["\x69\x64\x62\x61\162\x61\x6e\x67"]; $kodebarang = $result["\x6b\157\144\x65\x62\x61\x72\141\x6e\147"]; $namabarang = $result["\156\141\155\141\142\x61\162\141\x6e\147"]; $hargaecer = $result["\150\x61\x72\147\141\x65\143\x65\x72"]; $hargagrosir = $result["\x68\141\162\147\x61\147\x72\157\x73\151\162"]; $stok = $result["\163\164\x6f\x6b"]; $hargamodal = $result["\150\x61\x72\x67\141\x6d\157\144\141\x6c"]; $tags = $result["\164\x61\147\163"]; $sqlpb = "\123\105\x4c\x45\103\x54\x20\160\x62\56\x69\x64\x62\x61\x72\x61\156\x67\x2c\40\163\56\156\x61\x6d\x61\163\165\x70\x70\x6c\x69\x65\162\x2c\40\x70\142\56\164\141\x6e\x67\147\141\154\142\x65\x6c\151\40\106\x52\x4f\115\x20\160\145\x6d\142\145\x6c\151\141\x6e\142\x61\x72\x61\x6e\147\40\x70\x62\x20\111\x4e\x4e\x45\122\40\112\x4f\111\x4e\40\x73\x75\x70\160\x6c\151\145\162\x20\x73\40\117\x4e\x20\x70\142\x2e\151\x64\163\x75\160\x70\154\151\145\x72\x20\x3d\40\163\56\x69\144\163\x75\160\x70\154\151\x65\x72\40\x57\x48\105\x52\x45\40\x70\142\56\151\x64\142\x61\162\141\x6e\147\x20\75\x20\x27{$idbarang}\x27\40\117\x52\x44\x45\x52\x20\102\x59\40\160\142\x2e\x69\144\x70\145\155\142\x65\x6c\x69\141\x6e\x62\x61\162\141\156\x67\40\104\x45\123\x43"; $querypb = mysqli_query($conn, $sqlpb); $resultpb = mysqli_fetch_array($querypb); $namasupplier = $resultpb["\x6e\x61\155\x61\163\165\x70\x70\x6c\151\145\x72"] ?? null; $tanggalbeli = $resultpb["\x74\x61\x6e\x67\x67\141\154\142\145\x6c\151"] ?? null; $shargaecer = number_format($hargaecer, 0, '', "\x2e"); $shargagrosir = number_format($hargagrosir, 0, '', "\x2e"); $sstok = number_format($stok, 0, '', "\x2e"); ?>
-<tr><td class="column100 column2"data-column="column2"style="display:none"><?php  echo $kodebarang; ?>
-</td><td class="column100 column2"data-column="column2"><?php  echo $namabarang; ?>
-</td><?php  if ($idjenispenjualan == "\x32") { ?>
-<td class="column100 column2"data-column="column2"><?php  echo $shargagrosir; ?>
-</td><?php  } else { ?>
-<td class="column100 column2"data-column="column2"><?php  echo $shargaecer; ?>
-</td><?php  } ?>
-<td class="column100 column2"data-column="column2"><?php  echo $sstok; ?>
-</td><td class="column100 column2"data-column="column2"style="display:none"><?php  echo $tags; ?>
-</td><form action="prosestambahbarangnotapenjualansendiri.php"method="post"><td class="column100 column2"data-column="column2"><input value="-"type="button"class="qtyminus"field="qtyjual"> <input name="qtyjual"value="1"type="number"style="width:40px;height:40px;font-size:15px"> <input value="+"type="button"class="qtyplus"field="qtyjual"></td><td class="column100 column8"data-column="column8"><input name="idbarang"value="<?php  echo $idbarang; ?>
-"type="hidden"> <input name="kodebarang"value="<?php  echo $kodebarang; ?>
-"type="hidden"> <input name="namabarang"value="<?php  echo $namabarang; ?>
-"type="hidden"><?php  if ($idjenispenjualan == "\62") { ?>
-<input name="hargajual"value="<?php  echo $hargagrosir; ?>
-"type="hidden"><?php  } else { ?>
-<input name="hargajual"value="<?php  echo $hargaecer; ?>
-"type="hidden"><?php  } ?>
-<input name="hargamodal"value="<?php  echo $hargamodal; ?>
-"type="hidden"> <input name="submit"type="image"class="gambartabel"src="image/check.png"></td></form></tr><?php  } goto HP9ix; VaoWF: $subtotal = 0; goto mLsi2; GuJrB: $namauser = $_SESSION["\156\x61\155\x61\165\x73\x65\162"]; goto urrzv; D4lgB: include "\x6c\x6f\x67\x6f\x2e\160\x68\x70"; goto TzZYJ; EjEC7: ?>
-</ul></nav></div></header><?php  goto zIfYE; wv8fN: $resulttotbarang = mysqli_query($conn, $querytotbarang); goto VZjW_; b6Xlv: $idmember = $resultnota["\x69\144\x6d\x65\155\x62\145\x72"] ?? null; goto oUmny; VZjW_: $cektotnota = mysqli_fetch_assoc($resulttotbarang); goto IlGkb; nbviP: if ($idjenispenjualan == "\61") { ?>
-<section id="boxes"><div class="boxnota"><div class="kepalanota"><aside id="sidebarnota"><div class="dark"><form action=""method="post"class="quote"><label>No Nota :</label> <input name="notaterpilih"value="<?php  echo $notaterpilih; ?>
-"readonly> <label>Tanggal :</label> <input name="tanggalmasuk"value="<?php  echo date("\x64\40\x4d\x20\131\x20\x48\72\151", strtotime($tanggalmasuk)); ?>
-"readonly> <label>Jenis :</label> <input name="jenispenjualan"value="Eceran"readonly></form></div></aside></div></div></section><?php  } else { if ($idjenispenjualan == "\62") { ?>
-<section id="boxes"><div class="boxnota"><div class="kepalanota"><aside id="sidebarnota"><div class="dark"><form action="pilihmember.php"method="post"class="quote"><label>Tanggal :</label> <input name="tanggalmasuk"value="<?php  echo date("\144\40\115\40\x59\40\x48\72\x69", strtotime($tanggalmasuk)); ?>
-"readonly><br><label>Jenis :</label> <input name="jenispenjualan"value="Grosir"readonly><br><label>ID Member:</label> <input name="idmember"value="<?php  echo $idmember; ?>
-"readonly><br><label>Nama :</label> <input name="namamember"value="<?php  echo $namamember; ?>
-"readonly> <input name="notaterpilih"value="<?php  echo $notaterpilih; ?>
-"type="hidden"><br><br><button class="button_1"type="submit">EDIT</button></form></div></aside></div></div></section><?php  } else { ?>
-<section id="boxes"><div class="boxnota"><div class="kepalanota"><aside id="sidebarnota"><div class="dark"><form action="editnotapenjualan.php"method="post"class="quote"><label>Tanggal Diterima:</label> <input name="tanggal"value="<?php  echo date("\x64\x20\115\x20\131", strtotime($tanggalmasuk)); ?>
-"readonly><br><label>Jenis :</label> <input name="jenispenjualan"value="Servis"readonly><br><label>Nama :</label> <input name="nama"value="<?php  echo $nama; ?>
-"readonly><br><label>Merk :</label> <input name="merk"value="<?php  echo $merk; ?>
-"readonly><br><label>Tipe :</label> <input name="tipe"value="<?php  echo $tipe; ?>
-"readonly><br><label>Kerusakan :</label> <textarea cols="40"name="kerusakan"readonly rows="5"><?php  echo $kerusakan; ?>
-</textarea><br><label>PIN :</label> <input name="pin"value="<?php  echo $pin; ?>
-"readonly><br><label>Sandi :</label> <input name="sandi"value="<?php  echo $sandi; ?>
-"readonly><br><label>Pola</label><br>1 2 3<br>4 5 6<br>7 8 9<br><input name="pola"value="<?php  echo $pola; ?>
-"readonly><br><input name="notaterpilih"value="<?php  echo $notaterpilih; ?>
-"type="hidden"> <input name="iddataservis"value="<?php  echo $iddataservis; ?>
-"type="hidden"> <input name="alamat"value="<?php  echo $alamat; ?>
-"type="hidden"> <input name="nama"value="<?php  echo $nama; ?>
-"type="hidden"> <input name="merk"value="<?php  echo $merk; ?>
-"type="hidden"> <input name="tipe"value="<?php  echo $tipe; ?>
-"type="hidden"> <input name="nohp"value="<?php  echo $nohp; ?>
-"type="hidden"> <input name="kerusakan"value="<?php  echo $kerusakan; ?>
-"type="hidden"> <input name="kondisi"value="<?php  echo $kondisi; ?>
-"type="hidden"> <input name="pin"value="<?php  echo $pin; ?>
-"type="hidden"> <input name="sandi"value="<?php  echo $sandi; ?>
-"type="hidden"> <input name="pola"value="<?php  echo $pola; ?>
-"type="hidden"><br><br><button class="button_1"type="submit">EDIT</button></form></div></aside></div></div></section><?php  } } goto JWvmT; wEutb: $kerusakan = $resultservis["\153\x65\x72\165\x73\141\x6b\141\156"] ?? null; goto ehC1S; c4fS_: $query = mysqli_query($conn, $sql); goto Hmt7w; jmkAl: $sqlservis = "\x53\x45\114\105\103\124\x20\52\40\106\x52\x4f\x4d\x20\x6b\145\x72\141\156\152\x61\x6e\147\142\x65\154\x61\x6e\x6a\141\40\x6b\x62\x20\111\116\116\x45\122\40\x4a\x4f\x49\x4e\x20\x64\141\x74\x61\163\x65\162\166\151\x73\x20\144\x73\x20\117\x4e\40\x6b\142\x2e\x69\144\x64\x61\164\141\x73\x65\x72\166\x69\163\40\75\40\x64\x73\56\x69\x64\144\141\164\141\x73\x65\162\166\x69\x73\40\x57\110\x45\122\105\x20\x6b\142\x2e\x6e\157\x6e\x6f\x74\x61\40\x3d\x20{$notaterpilih}"; goto NgXvH; sNY1q: ob_end_flush(); goto nGeDV; BAOJY: $alamat = $resultservis["\141\154\x61\x6d\141\164"] ?? null; goto AarRn; b7ldf: $sandi = $resultservis["\163\x61\156\144\x69"] ?? null; goto JWbuh; NgXvH: $queryservis = mysqli_query($conn, $sqlservis); goto UozJi; nGeDV: ?>
+session_start();
+ob_start();
+require_once "dbangelconnect.php";
+
+// 1. PROTEKSI & AMBIL SESSION
+if (!isset($_SESSION["user"])) {
+    header("Location: login.php");
+    die;
+}
+
+if (!isset($_SESSION["notaterpilih"])) {
+    header("Refresh: 1; URL='pilihnota.php'");
+    die;
+}
+
+$namauser = $_SESSION["namauser"];
+$roleuser = $_SESSION["user"];
+$notaterpilih = $_SESSION["notaterpilih"];
+
+// 2. CEK APAKAH NOTA KOSONG
+$q_cek = mysqli_query($conn, "SELECT COUNT(*) as totaldata FROM keranjangrinci WHERE nonota='$notaterpilih'");
+$cektotnota = mysqli_fetch_assoc($q_cek);
+if ($cektotnota["totaldata"] == 0) {
+    header("Refresh: 0; URL='pilihnota.php'");
+    die;
+}
+
+// 3. AMBIL DATA KERANJANG UTAMA
+$sql_kb = "SELECT * FROM keranjangbelanja WHERE nonota = '$notaterpilih'";
+$q_kb = mysqli_query($conn, $sql_kb);
+$res_kb = mysqli_fetch_assoc($q_kb);
+
+$tanggalmasuk = $res_kb["tanggalmasuk"] ?? null;
+$idjenispenjualan = $res_kb["idjenispenjualan"] ?? null;
+$idmember = $res_kb["idmember"] ?? null;
+$iddataservis = $res_kb["iddataservis"] ?? null;
+
+// 4. AMBIL DETAIL MEMBER ATAU SERVIS
+$namamember = "-";
+$alamatgrosir = "-";
+$ds = [
+    'nama' => '',
+    'merk' => '',
+    'tipe' => '',
+    'kerusakan' => '',
+    'status' => '',
+    'nohp' => '',
+    'pin' => '',
+    'sandi' => '',
+    'pola' => '',
+    'kondisi' => '',
+    'alamat' => ''
+];
+
+if ($idjenispenjualan == "2") {
+    $q_m = mysqli_query($conn, "SELECT * FROM member WHERE idmember = '$idmember'");
+    $res_m = mysqli_fetch_assoc($q_m);
+    $namamember = $res_m["namamember"] ?? null;
+    $alamatgrosir = $res_m["alamat"] ?? null;
+} elseif ($idjenispenjualan == "3") {
+    $q_s = mysqli_query($conn, "SELECT * FROM dataservis WHERE iddataservis = '$iddataservis'");
+    $res_s = mysqli_fetch_assoc($q_s);
+    if ($res_s) $ds = $res_s;
+}
+?>
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Nota Penjualan - Angel Cell</title>
+    <link href="image/favicon.ico" rel="icon">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="DataTables/datatables.min.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <script src="DataTables/jquery-3.5.1.js"></script>
+    <script src="DataTables/datatables.min.js"></script>
+    <style>
+        .dropdown:hover .dropdown-menu {
+            display: block;
+        }
+
+        .dataTables_wrapper .dataTables_length select,
+        .dataTables_wrapper .dataTables_filter input {
+            @apply border border-gray-300 rounded px-2 py-1 outline-none focus:ring-2 focus:ring-blue-500;
+        }
+    </style>
+</head>
+
+<body class="bg-gray-100 text-gray-800 font-sans leading-normal">
+
+    <header class="bg-white shadow-lg sticky top-0 z-50">
+        <div class="container mx-auto px-4">
+            <div class="flex justify-between items-center py-3">
+                <div class="flex items-center space-x-4">
+                    <?php include "logo.php"; ?>
+                </div>
+
+                <div class="hidden md:flex items-center space-x-1 text-sm font-medium">
+                    <a href="dashboard.php" class="px-3 py-2 hover:bg-gray-100 rounded-md">Dashboard</a>
+
+                    <div class="relative dropdown">
+                        <button class="px-3 py-2 hover:bg-gray-100 rounded-md inline-flex items-center">
+                            Barang <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                            </svg>
+                        </button>
+                        <div class="dropdown-menu absolute hidden bg-white shadow-xl rounded-md py-2 w-48 border mt-0">
+                            <?php if ($roleuser == "admin"): ?>
+                                <a href="tambahbarang.php" class="block px-4 py-2 hover:bg-blue-50 hover:text-blue-600">Tambah Barang</a>
+                                <a href="searchbarangmasuk.php" class="block px-4 py-2 hover:bg-blue-50 hover:text-blue-600">Barang Masuk</a>
+                            <?php else: ?>
+                                <a href="tambahbarangkaryawan.php" class="block px-4 py-2 hover:bg-blue-50 hover:text-blue-600">Tambah Barang</a>
+                            <?php endif; ?>
+                            <a href="searchbarang.php" class="block px-4 py-2 hover:bg-blue-50 hover:text-blue-600 border-t">Cari Barang</a>
+                        </div>
+                    </div>
+
+                    <div class="relative dropdown">
+                        <button class="px-3 py-2 hover:bg-gray-100 rounded-md inline-flex items-center">
+                            Member <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                            </svg>
+                        </button>
+                        <div class="dropdown-menu absolute hidden bg-white shadow-xl rounded-md py-2 w-48 border mt-0">
+                            <a href="tambahmember.php" class="block px-4 py-2 hover:bg-blue-50 hover:text-blue-600">Tambah Member</a>
+                            <a href="searchmember.php" class="block px-4 py-2 hover:bg-blue-50 hover:text-blue-600">Data Member</a>
+                        </div>
+                    </div>
+
+                    <div class="relative dropdown">
+                        <button class="px-3 py-2 hover:bg-gray-100 rounded-md inline-flex items-center text-blue-600">
+                            Penjualan <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                            </svg>
+                        </button>
+                        <div class="dropdown-menu absolute hidden bg-white shadow-xl rounded-md py-2 w-48 border mt-0">
+                            <a href="penjualanbaru.php" class="block px-4 py-2 hover:bg-blue-50 hover:text-blue-600">Nota Baru</a>
+                            <a href="pilihnota.php" class="block px-4 py-2 hover:bg-blue-50 hover:text-blue-600">Pilih Nota</a>
+                            <a href="searcharsipnota.php" class="block px-4 py-2 hover:bg-blue-50 hover:text-blue-600">Arsip Nota</a>
+                        </div>
+                    </div>
+
+                    <a href="servisditerima.php" class="px-3 py-2 hover:bg-gray-100 rounded-md">Servis</a>
+
+                    <?php if ($roleuser == "admin"): ?>
+                        <div class="relative dropdown">
+                            <button class="px-3 py-2 hover:bg-gray-100 rounded-md inline-flex items-center">
+                                Supplier <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                                </svg>
+                            </button>
+                            <div class="dropdown-menu absolute hidden bg-white shadow-xl rounded-md py-2 w-48 border mt-0">
+                                <a href="searchsupplier.php" class="block px-4 py-2 hover:bg-blue-50 hover:text-blue-600">Data Supplier</a>
+                                <a href="tambahsupplier.php" class="block px-4 py-2 hover:bg-blue-50 hover:text-blue-600">Tambah Baru</a>
+                            </div>
+                        </div>
+                        <div class="relative dropdown">
+                            <button class="px-3 py-2 hover:bg-gray-100 rounded-md inline-flex items-center font-bold text-red-600">
+                                Laporan <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                                </svg>
+                            </button>
+                            <div class="dropdown-menu absolute hidden bg-white shadow-xl rounded-md py-2 w-48 border mt-0">
+                                <a href="searchpenjualanharian.php" class="block px-4 py-2 hover:bg-blue-50 hover:text-blue-600">Penjualan Harian</a>
+                                <a href="searchpendapatan.php" class="block px-4 py-2 hover:bg-blue-50 hover:text-blue-600">Pendapatan</a>
+                                <a href="searchpembelian.php" class="block px-4 py-2 hover:bg-blue-50 hover:text-blue-600">Pembelian</a>
+                                <a href="searchmodal.php" class="block px-4 py-2 hover:bg-blue-50 hover:text-blue-600 text-orange-600">Modal</a>
+                                <a href="searchabsen.php" class="block px-4 py-2 hover:bg-blue-50 hover:text-blue-600 border-t">Absen</a>
+                                <a href="searchgajikaryawan.php" class="block px-4 py-2 hover:bg-blue-50 hover:text-blue-600">Gaji</a>
+                            </div>
+                        </div>
+                        <div class="relative dropdown">
+                            <button class="px-3 py-2 hover:bg-gray-100 rounded-md inline-flex items-center">
+                                User <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                                </svg>
+                            </button>
+                            <div class="dropdown-menu absolute hidden bg-white shadow-xl rounded-md py-2 w-48 border mt-0">
+                                <a href="tambahuser.php" class="block px-4 py-2 hover:bg-blue-50 hover:text-blue-600">Tambah User</a>
+                                <a href="searchuser.php" class="block px-4 py-2 hover:bg-blue-50 hover:text-blue-600">Data User</a>
+                            </div>
+                        </div>
+                    <?php endif; ?>
+
+                    <a href="logout.php?logout" class="ml-4 px-4 py-2 bg-red-500 text-white rounded-md hover:bg-red-600 transition">Keluar</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="container mx-auto px-4 py-6">
+        <div class="flex flex-wrap gap-3 mb-6">
+            <?php if ($idjenispenjualan == "3"): ?>
+                <form action="prosescancelservis.php" method="post" onsubmit="return confirm('Yakin Cancel Servis?')">
+                    <input name="notaterpilih" value="<?php echo $notaterpilih; ?>" type="hidden">
+                    <input name="iddataservis" value="<?php echo $iddataservis; ?>" type="hidden">
+                    <button class="bg-red-600 hover:bg-red-700 text-white font-bold py-2 px-4 rounded shadow transition" type="submit uppercase">CANCEL SERVIS</button>
+                </form>
+            <?php else: ?>
+                <form action="proseshapusnotapenjualan.php" method="post" onsubmit="return confirm('Yakin Hapus Nota?')">
+                    <input name="notaterpilih" value="<?php echo $notaterpilih; ?>" type="hidden">
+                    <button class="bg-red-600 hover:bg-red-700 text-white font-bold py-2 px-4 rounded shadow transition" type="submit">HAPUS NOTA</button>
+                </form>
+            <?php endif; ?>
+
+            <form action="tambahbarangnotapenjualansendiri.php" method="post">
+                <input name="notaterpilih" value="<?php echo $notaterpilih; ?>" type="hidden">
+                <button class="bg-emerald-600 hover:bg-emerald-700 text-white font-bold py-2 px-4 rounded shadow transition" type="submit">TAMBAH BARANG MANUAL</button>
+            </form>
+        </div>
+
+        <div class="bg-white p-6 rounded-xl shadow-md mb-8 border border-gray-200">
+            <h2 class="text-xl font-bold mb-4 flex items-center text-gray-700">
+                <svg class="w-6 h-6 mr-2 text-blue-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4"></path>
+                </svg>
+                Pilih Barang ke Nota
+            </h2>
+            <div class="overflow-x-auto">
+                <input
+                    type="text"
+                    id="barcodeInput"
+                    autofocus
+                    style="position:absolute;opacity:0;height:0;width:0;">
+                <table id="example" class="w-full text-sm text-left">
+                    <thead class="bg-gray-50 text-gray-600 uppercase text-xs border-b">
+                        <tr>
+                            <th class="hidden">Kode</th>
+                            <th class="px-4 py-3">Nama</th>
+                            <th class="px-4 py-3">Harga <?php echo ($idjenispenjualan == "2") ? "Grosir" : "Ecer"; ?></th>
+                            <th class="px-4 py-3">Stok</th>
+                            <th class="hidden">Tags</th>
+                            <th class="px-4 py-3 text-center w-32">Qty</th>
+                            <th class="px-4 py-3 text-center">Aksi</th>
+                        </tr>
+                    </thead>
+                    <tbody class="divide-y divide-gray-100">
+                        <?php
+                        $q_brg = mysqli_query($conn, "SELECT * FROM barang WHERE aktif='1' ORDER BY namabarang ASC");
+                        while ($b = mysqli_fetch_assoc($q_brg)):
+                            $harga = ($idjenispenjualan == "2") ? $b["hargagrosir"] : $b["hargaecer"];
+                        ?>
+                            <tr class="hover:bg-blue-50 transition">
+                                <td class="hidden"><?php echo $b["kodebarang"]; ?></td>
+                                <td class="px-4 py-3 font-medium"><?php echo $b["namabarang"]; ?></td>
+                                <td class="px-4 py-3 font-bold text-blue-600"><?php echo number_format($harga, 0, '', '.'); ?></td>
+                                <td class="px-4 py-3"><?php echo number_format($b["stok"], 0, '', '.'); ?></td>
+                                <td class="hidden"><?php echo $b["tags"]; ?></td>
+                                <form action="prosestambahbarangnotapenjualansendiri.php" method="post">
+                                    <td class="px-4 py-3">
+                                        <div class="flex items-center border rounded-lg bg-white overflow-hidden">
+                                            <button type="button" class="qtyminus w-8 h-8 flex items-center justify-center bg-gray-100 hover:bg-gray-200" field="qtyjual">-</button>
+                                            <input name="qtyjual" value="1" type="number" class="w-12 text-center border-none text-sm font-bold focus:ring-0" readonly>
+                                            <button type="button" class="qtyplus w-8 h-8 flex items-center justify-center bg-gray-100 hover:bg-gray-200" field="qtyjual">+</button>
+                                        </div>
+                                    </td>
+                                    <td class="px-4 py-3 text-center">
+                                        <input name="idbarang" value="<?php echo $b["idbarang"]; ?>" type="hidden">
+                                        <input name="kodebarang" value="<?php echo $b["kodebarang"]; ?>" type="hidden">
+                                        <input name="namabarang" value="<?php echo $b["namabarang"]; ?>" type="hidden">
+                                        <input name="hargajual" value="<?php echo $harga; ?>" type="hidden">
+                                        <input name="hargamodal" value="<?php echo $b["hargamodal"]; ?>" type="hidden">
+                                        <button type="submit" class="hover:scale-110 transform transition">
+                                            <i class="fa-solid fa-cart-plus text-green-600 text-xl"></i>
+                                        </button>
+                                    </td>
+                                </form>
+                            </tr>
+                        <?php endwhile; ?>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <div class="bg-white p-6 rounded-xl shadow-md mb-8 border-t-4 border-blue-500">
+            <h2 class="text-xl font-bold mb-4 text-gray-700">Isi Nota: <?php echo $notaterpilih; ?></h2>
+            <div class="overflow-x-auto">
+                <table class="w-full text-sm text-left">
+                    <thead class="bg-gray-800 text-white rounded-t-lg">
+                        <tr>
+                            <th class="px-4 py-3">Barang</th>
+                            <th class="px-4 py-3">Harga</th>
+                            <th class="px-4 py-3">Qty</th>
+                            <th class="px-4 py-3 text-right">Total</th>
+                            <th class="px-4 py-3 text-center">Edit</th>
+                        </tr>
+                    </thead>
+                    <tbody class="divide-y">
+                        <?php
+                        $subtotal = 0;
+                        $q_rinci = mysqli_query($conn, "SELECT kr.*, b.namabarang, b.hargamodal FROM keranjangrinci kr JOIN barang b ON kr.idbarang = b.idbarang WHERE kr.nonota = '$notaterpilih' ORDER BY idkeranjangrinci ASC");
+                        while ($rinci = mysqli_fetch_assoc($q_rinci)):
+                            $total_brg = $rinci["hargajual"] * $rinci["qtyjual"];
+                            $subtotal += $total_brg;
+                        ?>
+                            <tr>
+                                <td class="px-4 py-3"><?php echo $rinci["namabarang"]; ?></td>
+                                <td class="px-4 py-3"><?php echo number_format($rinci["hargajual"], 0, '', '.'); ?></td>
+                                <td class="px-4 py-3"><?php echo $rinci["qtyjual"]; ?></td>
+                                <td class="px-4 py-3 text-right font-bold"><?php echo number_format($total_brg, 0, '', '.'); ?></td>
+                                <td class="px-4 py-3 text-center">
+                                    <form action="editnotapenjualanbarang.php" method="post">
+                                        <input name="destination" value="<?php echo $_SERVER["REQUEST_URI"]; ?>" type="hidden">
+                                        <input name="idbarang" value="<?php echo $rinci['idbarang']; ?>" type="hidden">
+                                        <input name="idkeranjangrinci" value="<?php echo $rinci['idkeranjangrinci']; ?>" type="hidden">
+                                        <input name="namabarang" value="<?php echo $rinci['namabarang']; ?>" type="hidden">
+                                        <input name="hargajual" value="<?php echo $rinci['hargajual']; ?>" type="hidden">
+                                        <input name="hargamodal" value="<?php echo $rinci['hargamodal']; ?>" type="hidden">
+                                        <input name="qtyjual" value="<?php echo $rinci['qtyjual']; ?>" type="hidden">
+                                        <input name="notaterpilih" value="<?php echo $notaterpilih; ?>" type="hidden">
+                                        <button type="submit" class="hover:scale-110 transform transition">
+                                            <i class="fa-solid fa-pen text-blue-600"></i>
+                                        </button>
+                                    </form>
+                                </td>
+                            </tr>
+                        <?php endwhile; ?>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+            <div class="bg-gray-900 text-white p-6 rounded-2xl shadow-xl">
+                <h3 class="text-lg font-bold mb-4 text-blue-400 border-b border-gray-700 pb-2 flex items-center">
+                    <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"></path>
+                    </svg>
+                    Detail Informasi Nota
+                </h3>
+                <div class="space-y-4 text-sm">
+                    <?php if ($idjenispenjualan == "1"): ?>
+                        <p class="flex justify-between"><span>No Nota:</span> <span class="text-gray-300 font-mono"><?php echo $notaterpilih; ?></span></p>
+                        <p class="flex justify-between"><span>Tanggal:</span> <span class="text-gray-300"><?php echo date("d M Y H:i", strtotime($tanggalmasuk)); ?></span></p>
+                        <p class="flex justify-between font-bold text-emerald-400 uppercase tracking-widest"><span>Jenis:</span> <span>Eceran</span></p>
+                    <?php elseif ($idjenispenjualan == "2"): ?>
+                        <form action="pilihmember.php" method="post" class="space-y-3">
+                            <p class="flex justify-between"><span>Tanggal:</span> <span class="text-gray-300"><?php echo date("d M Y H:i", strtotime($tanggalmasuk)); ?></span></p>
+                            <p class="flex justify-between font-bold text-yellow-400 uppercase"><span>Jenis:</span> <span>Grosir</span></p>
+                            <p class="flex justify-between"><span>ID Member:</span> <span class="text-gray-300"><?php echo $idmember; ?></span></p>
+                            <p class="flex justify-between"><span>Nama :</span> <span class="text-gray-300"><?php echo $namamember; ?></span></p>
+                            <input name="notaterpilih" value="<?php echo $notaterpilih; ?>" type="hidden">
+                            <button class="w-full bg-blue-600 hover:bg-blue-700 py-2 rounded-lg font-bold mt-2" type="submit">GANTI MEMBER</button>
+                        </form>
+                    <?php else: ?>
+                        <form action="editnotapenjualan.php" method="post" class="space-y-2">
+                            <p class="flex justify-between"><span>Unit Servis:</span> <span class="text-blue-300 font-bold"><?php echo $ds['merk'] . ' ' . $ds['tipe']; ?></span></p>
+                            <p class="flex justify-between"><span>Pemilik:</span> <span class="text-gray-300"><?php echo $ds['nama']; ?></span></p>
+                            <div class="bg-gray-800 p-3 rounded-lg border border-gray-700">
+                                <span class="text-xs text-gray-500 uppercase block mb-1">Kerusakan</span>
+                                <span class="text-red-400 italic"><?php echo $ds['kerusakan']; ?></span>
+                            </div>
+                            <div class="grid grid-cols-2 gap-2 text-xs">
+                                <div class="bg-gray-800 p-2 rounded"><span>Pola:</span> <span class="text-gray-300"><?php echo $ds['pola']; ?></span></div>
+                                <div class="bg-gray-800 p-2 rounded"><span>PIN:</span> <span class="text-gray-300"><?php echo $ds['pin'] . ' / ' . $ds['sandi']; ?></span></div>
+                            </div>
+                            <input name="notaterpilih" value="<?php echo $notaterpilih; ?>" type="hidden">
+                            <input name="iddataservis" value="<?php echo $iddataservis; ?>" type="hidden">
+                            <?php foreach (['nama', 'merk', 'tipe', 'nohp', 'kerusakan', 'kondisi', 'pin', 'sandi', 'pola', 'alamat'] as $fld) echo "<input name='$fld' value='{$ds[$fld]}' type='hidden'>"; ?>
+                            <button class="w-full bg-blue-600 hover:bg-blue-700 py-2 rounded-lg font-bold mt-4" type="submit text-xs">PERBAHARUI DATA SERVIS</button>
+                        </form>
+                    <?php endif; ?>
+                </div>
+            </div>
+
+            <div class="bg-white p-6 rounded-2xl shadow-xl border-2 border-emerald-500">
+                <?php
+                $st = $ds['status'];
+                $act = ($st == "dikerjakan") ? "prosesservisselesaidikerjakan.php" : (($st == "diterima") ? "prosesnotapengambilan.php" : (($st == "servis dicancel") ? "proseshapusservisdicancel.php" : "print.php"));
+                ?>
+                <form action="<?php echo $act; ?>" method="POST" name="myform" onkeyup="calculate()" class="space-y-4">
+                    <div class="flex items-center justify-between mb-4">
+                        <div class="flex items-center space-x-3">
+                            <img src="image/<?php echo $namauser; ?>.png" onerror="this.style.display='none'" class="w-12 h-12 rounded-full border shadow-sm">
+                            <div>
+                                <p class="text-[10px] text-gray-500 uppercase font-bold tracking-widest">Operator Kasir</p>
+                                <input name="namauser" value="<?php echo $namauser; ?>" readonly class="font-bold text-gray-800 outline-none w-full">
+                            </div>
+                        </div>
+                        <div class="text-right">
+                            <p class="text-[10px] text-gray-500 uppercase font-bold tracking-widest">Total Tagihan</p>
+                            <input name="subtotal2" value="<?php echo number_format($subtotal, 0, '', '.'); ?>" readonly class="text-3xl font-black text-emerald-600 outline-none w-full text-right bg-transparent">
+                        </div>
+                    </div>
+
+                    <hr class="border-dashed">
+
+                    <div class="grid grid-cols-2 gap-4">
+                        <div>
+                            <label class="block text-xs font-bold text-gray-500 uppercase mb-1">Diskon (Rp)</label>
+                            <input name="diskon" value="0" type="number" class="w-full border-2 rounded-xl p-3 focus:border-emerald-500 outline-none font-bold text-lg">
+                        </div>
+                        <div>
+                            <label class="block text-xs font-bold text-gray-500 uppercase mb-1">Tunai / Bayar (Rp)</label>
+                            <input name="tunai" id="tunai" type="number" required class="w-full border-2 border-emerald-400 rounded-xl p-3 focus:border-emerald-600 outline-none font-black text-lg bg-emerald-50">
+                        </div>
+                    </div>
+
+                    <div>
+                        <label class="block text-xs font-bold text-gray-500 uppercase mb-1">Kembalian</label>
+                        <input name="kembalian" readonly type="number" class="w-full bg-gray-100 border-none rounded-xl p-3 font-black text-2xl text-red-600">
+                    </div>
+
+                    <?php if (!in_array($st, ["dikerjakan", "diterima", "servis dicancel"])): ?>
+                        <div class="bg-blue-50 p-3 rounded-xl border border-blue-100">
+                            <label class="text-sm font-bold text-blue-700 block mb-2">
+                                Cetak Nota Fisik?
+                            </label>
+
+                            <div class="flex items-center space-x-6">
+                                <label class="flex items-center space-x-2 cursor-pointer">
+                                    <input type="radio" name="printnota" value="1" checked
+                                        class="w-4 h-4 text-blue-600 focus:ring-blue-500 border-gray-300">
+                                    <span class="font-bold text-blue-800">Ya, Cetak Printer</span>
+                                </label>
+
+                                <label class="flex items-center space-x-2 cursor-pointer">
+                                    <input type="radio" name="printnota" value="0"
+                                        class="w-4 h-4 text-blue-600 focus:ring-blue-500 border-gray-300">
+                                    <span class="font-bold text-blue-800">Tidak, Simpan Saja</span>
+                                </label>
+                            </div>
+                        </div>
+                    <?php endif; ?>
+
+                    <input name="subtotal" value="<?php echo $subtotal; ?>" type="hidden">
+                    <input name="notaterpilih" value="<?php echo $notaterpilih; ?>" type="hidden">
+                    <input name="nonota" value="<?php echo $notaterpilih; ?>" type="hidden">
+                    <input name="idjenispenjualan" value="<?php echo $idjenispenjualan; ?>" type="hidden">
+                    <input name="iddataservis" value="<?php echo $iddataservis; ?>" type="hidden">
+                    <input name="idmember" value="<?php echo $idmember; ?>" type="hidden">
+                    <input name="alamatgrosir" value="<?php echo $alamatgrosir; ?>" type="hidden">
+                    <input name="namamember" value="<?php echo $namamember; ?>" type="hidden">
+                    <input name="tanggaldikerjakan" value="<?php echo date("d M Y", strtotime($tanggalmasuk)); ?>" type="hidden">
+                    <?php foreach (['nama', 'merk', 'tipe', 'nohp', 'kerusakan', 'kondisi'] as $fld) echo "<input name='$fld' value='{$ds[$fld]}' type='hidden'>"; ?>
+
+                    <button class="w-full bg-emerald-600 hover:bg-emerald-700 text-white font-black py-4 rounded-2xl shadow-lg transition transform active:scale-95 uppercase tracking-wider" type="submit">
+                        <?php
+                        if ($st == "dikerjakan") echo "✓ Konfirmasi Selesai";
+                        elseif ($st == "diterima") echo "⎙ Print Pengambilan";
+                        elseif ($st == "servis dicancel") echo "⚠ Ambil Cancel";
+                        else echo " Proses Pembayaran";
+                        ?>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </main>
+
+    <script>
+        $(document).ready(function() {
+            // 1. Inisialisasi DataTable
+            // Simpan ke variabel global agar bisa diakses jika perlu
+            var table = $('#example').DataTable({
+                "pageLength": 10,
+                "language": {
+                    "search": "Cari Nama/Kode:"
+                }
+            });
+
+            // 2. Logika Tombol QTY (Plus/Minus)
+            // Menggunakan delegasi pada document agar tombol tetap berfungsi setelah filter/search/paging
+            $(document).on('click', '.qtyplus', function(e) {
+                e.preventDefault();
+                let input = $(this).siblings('input[name="qtyjual"]');
+                let val = parseInt(input.val());
+                if (!isNaN(val)) input.val(val + 1);
+            });
+
+            $(document).on('click', '.qtyminus', function(e) {
+                e.preventDefault();
+                let input = $(this).siblings('input[name="qtyjual"]');
+                let val = parseInt(input.val());
+                if (!isNaN(val) && val > 1) input.val(val - 1);
+            });
+
+            // 3. ================= SCANNER LOGIC (IMPROVED) =================
+            let scanBuffer = "";
+            let lastTime = Date.now();
+
+            $(document).on("keydown", function(e) {
+                let now = Date.now();
+
+                // Identifikasi target: Jika fokus di input manual (tunai/diskon), jangan jalankan scanner
+                const target = e.target;
+                if (target.tagName === "INPUT" && target.id !== "barcodeInput") {
+                    return;
+                }
+
+                // Jika jeda antar tombol > 200ms, anggap itu ketikan manusia dan reset buffer
+                if (now - lastTime > 200) {
+                    scanBuffer = "";
+                }
+                lastTime = now;
+
+                if (e.key === "Enter") {
+                    // Jika buffer berisi kode yang cukup panjang
+                    if (scanBuffer.length >= 3) {
+                        e.preventDefault();
+                        let kodeFinal = scanBuffer;
+                        scanBuffer = ""; // Langsung kosongkan buffer
+                        kirimScan(kodeFinal);
+                    }
+                } else if (e.key.length === 1) {
+                    // Masukkan karakter ke buffer
+                    scanBuffer += e.key;
+                }
+            });
+
+            function kirimScan(kode) {
+                $.ajax({
+                    url: "prosestambahbarangnotapenjualansendiri.php",
+                    method: "POST",
+                    data: {
+                        kodebarang: kode,
+                        qtyjual: 1,
+                        notaterpilih: "<?= $notaterpilih ?>"
+                    },
+                    success: function(response) {
+                        // Gunakan window.location.href untuk refresh yang lebih bersih
+                        window.location.href = window.location.href;
+                    },
+                    error: function(xhr, status, error) {
+                        console.error("Error Scan:", error);
+                        alert("Barang dengan kode " + kode + " gagal diproses atau tidak ditemukan!");
+                        // Kembalikan fokus ke input barcode jika gagal
+                        $("#barcodeInput").focus();
+                    }
+                });
+            }
+
+            // 4. Auto Fokus Scanner
+            // Fokus akan kembali ke input tersembunyi jika user tidak sedang mengetik di input lain
+            setInterval(() => {
+                const active = document.activeElement;
+                if (active.tagName !== "INPUT" && active.tagName !== "TEXTAREA") {
+                    $("#barcodeInput").focus();
+                }
+            }, 1000);
+        });
+
+        // 5. ================= HITUNG KEMBALIAN =================
+        function calculate() {
+            const f = document.forms.myform;
+            if (!f) return;
+
+            // Gunakan Number() untuk konversi yang lebih aman
+            let sub = parseInt(f.subtotal.value) || 0;
+            let disc = parseInt(f.diskon.value) || 0;
+            let cash = parseInt(f.tunai.value) || 0;
+
+            if (f.kembalian) {
+                let totalHarusDibayar = sub - disc;
+                f.kembalian.value = cash - totalHarusDibayar;
+            }
+        }
+    </script>
+
+</body>
+
+</html>
+<?php
+mysqli_close($conn);
+ob_end_flush();
+?>
